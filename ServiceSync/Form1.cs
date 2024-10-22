@@ -16,5 +16,17 @@ namespace ServiceSync
 		{
 			InitializeComponent();
 		}
+
+		private void ribbonControl1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void BtnProductListForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmProductList fr = new Forms.FrmProductList();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }
