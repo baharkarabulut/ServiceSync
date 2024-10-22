@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bb19a2acd7dc438480837db70401949b" Name="Diagram1">
+        <EntityTypeShape EntityType="DbServicesModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblAdmin" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblCategory" Width="1.5" PointX="0.75" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblCurrent" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblDepartment" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblExpense" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblFaultDetail" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblInvoiceDetail" Width="1.5" PointX="7.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblInvoiceInformation" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblNotes" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblProduct" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblProductAcceptance" Width="1.5" PointX="8.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblProductMovement" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblProductTracking" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbServicesModel.TblStaff" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProduct_TblCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblInvoiceInformation_TblCurrent" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductAcceptance_TblCurrent" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductMovement_TblCurrent" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblStaff_TblDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblInvoiceDetail_TblInvoiceInformation" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblInvoiceInformation_TblStaff" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductAcceptance_TblProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductMovement_TblProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductTracking_TblProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductAcceptance_TblStaff" ManuallyRouted="false" />
+        <AssociationConnector Association="DbServicesModel.FK_TblProductMovement_TblStaff" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

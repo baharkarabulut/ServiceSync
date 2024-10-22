@@ -1,0 +1,985 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DbServicesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="nvarchar" MaxLength="10" />
+          <Property Name="PASSWORD" Type="nvarchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TblCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TblCurrent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="SURNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="TELEPHONE" Type="nvarchar" MaxLength="20" />
+          <Property Name="MAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="CITY" Type="nvarchar" MaxLength="30" />
+          <Property Name="PROVINCE" Type="nvarchar" MaxLength="30" />
+          <Property Name="BANK" Type="nvarchar" MaxLength="50" />
+          <Property Name="TAXOFFICE" Type="nvarchar" MaxLength="50" />
+          <Property Name="TAXNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="STATU" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADDRESS" Type="nvarchar" MaxLength="450" />
+        </EntityType>
+        <EntityType Name="TblDepartment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="EXPLANATION" Type="nvarchar" MaxLength="550" />
+        </EntityType>
+        <EntityType Name="TblExpense">
+          <Key>
+            <PropertyRef Name="EXPENSEID" />
+          </Key>
+          <Property Name="EXPENSEID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EXPENSEEXPLANATION" Type="nvarchar" MaxLength="50" />
+          <Property Name="DATE" Type="smalldatetime" />
+          <Property Name="AMOUNT" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="TblFaultDetail">
+          <Key>
+            <PropertyRef Name="FAULTID" />
+          </Key>
+          <Property Name="FAULTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PROCESS" Type="int" />
+          <Property Name="PROBLEM" Type="nvarchar" MaxLength="450" />
+          <Property Name="EXPLANATION" Type="nvarchar" MaxLength="550" />
+          <Property Name="PREPRICE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="NETPRICE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PROCESSES" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="TblInvoiceDetail">
+          <Key>
+            <PropertyRef Name="INVOICEDETAILID" />
+          </Key>
+          <Property Name="INVOICEDETAILID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRODUCT" Type="nvarchar" MaxLength="50" />
+          <Property Name="NUMBER" Type="smallint" />
+          <Property Name="PRICE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="TOTALAMOUNT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="INVOICEID" Type="int" />
+        </EntityType>
+        <EntityType Name="TblInvoiceInformation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SERIES" Type="nchar" MaxLength="1" />
+          <Property Name="SERIESNO" Type="nchar" MaxLength="6" />
+          <Property Name="DATE" Type="smalldatetime" />
+          <Property Name="HOURS" Type="nchar" MaxLength="5" />
+          <Property Name="TAXOFFICE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CURRENT" Type="int" />
+          <Property Name="STAFF" Type="smallint" />
+        </EntityType>
+        <EntityType Name="TblNotes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TITLE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CONTENT" Type="nvarchar" MaxLength="550" />
+          <Property Name="STATUS" Type="bit" />
+        </EntityType>
+        <EntityType Name="TblProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="BRAND" Type="nvarchar" MaxLength="50" />
+          <Property Name="PURCHASEPRICE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SALEPRICE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="STOCK" Type="smallint" />
+          <Property Name="CATEGORY" Type="tinyint" />
+          <Property Name="STATUS" Type="bit" />
+        </EntityType>
+        <EntityType Name="TblProductAcceptance">
+          <Key>
+            <PropertyRef Name="PROCESSID" />
+          </Key>
+          <Property Name="PROCESSID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRODUCT" Type="int" />
+          <Property Name="CURRENT" Type="int" />
+          <Property Name="PERSONNEL" Type="smallint" />
+          <Property Name="DATEOFARRIVAL" Type="smalldatetime" />
+          <Property Name="EXITDATE" Type="smalldatetime" />
+        </EntityType>
+        <EntityType Name="TblProductMovement">
+          <Key>
+            <PropertyRef Name="MOVEMENTID" />
+          </Key>
+          <Property Name="MOVEMENTID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRODUCT" Type="int" />
+          <Property Name="CUSTOMER" Type="int" />
+          <Property Name="STAFF" Type="smallint" />
+          <Property Name="DATE" Type="smalldatetime" />
+          <Property Name="NUMBER" Type="smallint" />
+          <Property Name="PRICE" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="TblProductTracking">
+          <Key>
+            <PropertyRef Name="FOLLOWID" />
+          </Key>
+          <Property Name="FOLLOWID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PRODUCT" Type="int" />
+          <Property Name="STATUS" Type="nvarchar" MaxLength="250" />
+          <Property Name="DATE" Type="int" />
+          <Property Name="TRACKINGCODE" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="TblStaff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="SURNAME" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPARTMENT" Type="tinyint" />
+          <Property Name="PHOTO" Type="nvarchar" MaxLength="150" />
+          <Property Name="MAIL" Type="nvarchar" MaxLength="50" />
+          <Property Name="TELEPHONE" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_TblInvoiceDetail_TblInvoiceInformation">
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="0..1" />
+          <End Role="TblInvoiceDetail" Type="Self.TblInvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblInvoiceInformation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceDetail">
+              <PropertyRef Name="INVOICEID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblInvoiceInformation_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceInformation">
+              <PropertyRef Name="CURRENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblInvoiceInformation_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceInformation">
+              <PropertyRef Name="STAFF" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProduct_TblCategory">
+          <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProduct">
+              <PropertyRef Name="CATEGORY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="CURRENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="PERSONNEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="CUSTOMER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="STAFF" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductTracking_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductTracking" Type="Self.TblProductTracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductTracking">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblStaff_TblDepartment">
+          <End Role="TblDepartment" Type="Self.TblDepartment" Multiplicity="0..1" />
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblDepartment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblStaff">
+              <PropertyRef Name="DEPARTMENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbServicesModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblCategory" EntityType="Self.TblCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblCurrent" EntityType="Self.TblCurrent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblDepartment" EntityType="Self.TblDepartment" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblExpense" EntityType="Self.TblExpense" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblFaultDetail" EntityType="Self.TblFaultDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblInvoiceDetail" EntityType="Self.TblInvoiceDetail" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblInvoiceInformation" EntityType="Self.TblInvoiceInformation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblNotes" EntityType="Self.TblNotes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblProduct" EntityType="Self.TblProduct" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblProductAcceptance" EntityType="Self.TblProductAcceptance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblProductMovement" EntityType="Self.TblProductMovement" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblProductTracking" EntityType="Self.TblProductTracking" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TblStaff" EntityType="Self.TblStaff" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TblInvoiceDetail_TblInvoiceInformation" Association="Self.FK_TblInvoiceDetail_TblInvoiceInformation">
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+            <End Role="TblInvoiceDetail" EntitySet="TblInvoiceDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblInvoiceInformation_TblCurrent" Association="Self.FK_TblInvoiceInformation_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblInvoiceInformation_TblStaff" Association="Self.FK_TblInvoiceInformation_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProduct_TblCategory" Association="Self.FK_TblProduct_TblCategory">
+            <End Role="TblCategory" EntitySet="TblCategory" />
+            <End Role="TblProduct" EntitySet="TblProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblCurrent" Association="Self.FK_TblProductAcceptance_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblProduct" Association="Self.FK_TblProductAcceptance_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblStaff" Association="Self.FK_TblProductAcceptance_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblCurrent" Association="Self.FK_TblProductMovement_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblProduct" Association="Self.FK_TblProductMovement_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblStaff" Association="Self.FK_TblProductMovement_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductTracking_TblProduct" Association="Self.FK_TblProductTracking_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductTracking" EntitySet="TblProductTracking" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblStaff_TblDepartment" Association="Self.FK_TblStaff_TblDepartment">
+            <End Role="TblDepartment" EntitySet="TblDepartment" />
+            <End Role="TblStaff" EntitySet="TblStaff" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DbServicesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TblAdmin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="PASSWORD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TblProduct" Relationship="Self.FK_TblProduct_TblCategory" FromRole="TblCategory" ToRole="TblProduct" />
+        </EntityType>
+        <EntityType Name="TblCurrent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TELEPHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CITY" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="PROVINCE" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="BANK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TAXOFFICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TAXNO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="STATU" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ADDRESS" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TblInvoiceInformation" Relationship="Self.FK_TblInvoiceInformation_TblCurrent" FromRole="TblCurrent" ToRole="TblInvoiceInformation" />
+          <NavigationProperty Name="TblProductAcceptance" Relationship="Self.FK_TblProductAcceptance_TblCurrent" FromRole="TblCurrent" ToRole="TblProductAcceptance" />
+          <NavigationProperty Name="TblProductMovement" Relationship="Self.FK_TblProductMovement_TblCurrent" FromRole="TblCurrent" ToRole="TblProductMovement" />
+        </EntityType>
+        <EntityType Name="TblDepartment">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EXPLANATION" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TblStaff" Relationship="Self.FK_TblStaff_TblDepartment" FromRole="TblDepartment" ToRole="TblStaff" />
+        </EntityType>
+        <EntityType Name="TblExpense">
+          <Key>
+            <PropertyRef Name="EXPENSEID" />
+          </Key>
+          <Property Name="EXPENSEID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EXPENSEEXPLANATION" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DATE" Type="DateTime" Precision="0" />
+          <Property Name="AMOUNT" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="TblFaultDetail">
+          <Key>
+            <PropertyRef Name="FAULTID" />
+          </Key>
+          <Property Name="FAULTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PROCESS" Type="Int32" />
+          <Property Name="PROBLEM" Type="String" MaxLength="450" FixedLength="false" Unicode="true" />
+          <Property Name="EXPLANATION" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="PREPRICE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="NETPRICE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PROCESSES" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TblInvoiceDetail">
+          <Key>
+            <PropertyRef Name="INVOICEDETAILID" />
+          </Key>
+          <Property Name="INVOICEDETAILID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRODUCT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NUMBER" Type="Int16" />
+          <Property Name="PRICE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="TOTALAMOUNT" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="INVOICEID" Type="Int32" />
+          <NavigationProperty Name="TblInvoiceInformation" Relationship="Self.FK_TblInvoiceDetail_TblInvoiceInformation" FromRole="TblInvoiceDetail" ToRole="TblInvoiceInformation" />
+        </EntityType>
+        <EntityType Name="TblInvoiceInformation">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SERIES" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+          <Property Name="SERIESNO" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="DATE" Type="DateTime" Precision="0" />
+          <Property Name="HOURS" Type="String" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Name="TAXOFFICE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CURRENT" Type="Int32" />
+          <Property Name="STAFF" Type="Int16" />
+          <NavigationProperty Name="TblCurrent" Relationship="Self.FK_TblInvoiceInformation_TblCurrent" FromRole="TblInvoiceInformation" ToRole="TblCurrent" />
+          <NavigationProperty Name="TblInvoiceDetail" Relationship="Self.FK_TblInvoiceDetail_TblInvoiceInformation" FromRole="TblInvoiceInformation" ToRole="TblInvoiceDetail" />
+          <NavigationProperty Name="TblStaff" Relationship="Self.FK_TblInvoiceInformation_TblStaff" FromRole="TblInvoiceInformation" ToRole="TblStaff" />
+        </EntityType>
+        <EntityType Name="TblNotes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TITLE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CONTENT" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="STATUS" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="TblProduct">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BRAND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PURCHASEPRICE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SALEPRICE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="STOCK" Type="Int16" />
+          <Property Name="CATEGORY" Type="Byte" />
+          <Property Name="STATUS" Type="Boolean" />
+          <NavigationProperty Name="TblCategory" Relationship="Self.FK_TblProduct_TblCategory" FromRole="TblProduct" ToRole="TblCategory" />
+          <NavigationProperty Name="TblProductAcceptance" Relationship="Self.FK_TblProductAcceptance_TblProduct" FromRole="TblProduct" ToRole="TblProductAcceptance" />
+          <NavigationProperty Name="TblProductMovement" Relationship="Self.FK_TblProductMovement_TblProduct" FromRole="TblProduct" ToRole="TblProductMovement" />
+          <NavigationProperty Name="TblProductTracking" Relationship="Self.FK_TblProductTracking_TblProduct" FromRole="TblProduct" ToRole="TblProductTracking" />
+        </EntityType>
+        <EntityType Name="TblProductAcceptance">
+          <Key>
+            <PropertyRef Name="PROCESSID" />
+          </Key>
+          <Property Name="PROCESSID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRODUCT" Type="Int32" />
+          <Property Name="CURRENT" Type="Int32" />
+          <Property Name="PERSONNEL" Type="Int16" />
+          <Property Name="DATEOFARRIVAL" Type="DateTime" Precision="0" />
+          <Property Name="EXITDATE" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="TblCurrent" Relationship="Self.FK_TblProductAcceptance_TblCurrent" FromRole="TblProductAcceptance" ToRole="TblCurrent" />
+          <NavigationProperty Name="TblProduct" Relationship="Self.FK_TblProductAcceptance_TblProduct" FromRole="TblProductAcceptance" ToRole="TblProduct" />
+          <NavigationProperty Name="TblStaff" Relationship="Self.FK_TblProductAcceptance_TblStaff" FromRole="TblProductAcceptance" ToRole="TblStaff" />
+        </EntityType>
+        <EntityType Name="TblProductMovement">
+          <Key>
+            <PropertyRef Name="MOVEMENTID" />
+          </Key>
+          <Property Name="MOVEMENTID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRODUCT" Type="Int32" />
+          <Property Name="CUSTOMER" Type="Int32" />
+          <Property Name="STAFF" Type="Int16" />
+          <Property Name="DATE" Type="DateTime" Precision="0" />
+          <Property Name="NUMBER" Type="Int16" />
+          <Property Name="PRICE" Type="Decimal" Precision="18" Scale="2" />
+          <NavigationProperty Name="TblCurrent" Relationship="Self.FK_TblProductMovement_TblCurrent" FromRole="TblProductMovement" ToRole="TblCurrent" />
+          <NavigationProperty Name="TblProduct" Relationship="Self.FK_TblProductMovement_TblProduct" FromRole="TblProductMovement" ToRole="TblProduct" />
+          <NavigationProperty Name="TblStaff" Relationship="Self.FK_TblProductMovement_TblStaff" FromRole="TblProductMovement" ToRole="TblStaff" />
+        </EntityType>
+        <EntityType Name="TblProductTracking">
+          <Key>
+            <PropertyRef Name="FOLLOWID" />
+          </Key>
+          <Property Name="FOLLOWID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PRODUCT" Type="Int32" />
+          <Property Name="STATUS" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="DATE" Type="Int32" />
+          <Property Name="TRACKINGCODE" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="TblProduct" Relationship="Self.FK_TblProductTracking_TblProduct" FromRole="TblProductTracking" ToRole="TblProduct" />
+        </EntityType>
+        <EntityType Name="TblStaff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int16" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SURNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DEPARTMENT" Type="Byte" />
+          <Property Name="PHOTO" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="MAIL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TELEPHONE" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="TblDepartment" Relationship="Self.FK_TblStaff_TblDepartment" FromRole="TblStaff" ToRole="TblDepartment" />
+          <NavigationProperty Name="TblInvoiceInformation" Relationship="Self.FK_TblInvoiceInformation_TblStaff" FromRole="TblStaff" ToRole="TblInvoiceInformation" />
+          <NavigationProperty Name="TblProductAcceptance" Relationship="Self.FK_TblProductAcceptance_TblStaff" FromRole="TblStaff" ToRole="TblProductAcceptance" />
+          <NavigationProperty Name="TblProductMovement" Relationship="Self.FK_TblProductMovement_TblStaff" FromRole="TblStaff" ToRole="TblProductMovement" />
+        </EntityType>
+        <Association Name="FK_TblProduct_TblCategory">
+          <End Role="TblCategory" Type="Self.TblCategory" Multiplicity="0..1" />
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProduct">
+              <PropertyRef Name="CATEGORY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblInvoiceInformation_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceInformation">
+              <PropertyRef Name="CURRENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="CURRENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblCurrent">
+          <End Role="TblCurrent" Type="Self.TblCurrent" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblCurrent">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="CUSTOMER" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblStaff_TblDepartment">
+          <End Role="TblDepartment" Type="Self.TblDepartment" Multiplicity="0..1" />
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblDepartment">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblStaff">
+              <PropertyRef Name="DEPARTMENT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblInvoiceDetail_TblInvoiceInformation">
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="0..1" />
+          <End Role="TblInvoiceDetail" Type="Self.TblInvoiceDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblInvoiceInformation">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceDetail">
+              <PropertyRef Name="INVOICEID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblInvoiceInformation_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblInvoiceInformation" Type="Self.TblInvoiceInformation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblInvoiceInformation">
+              <PropertyRef Name="STAFF" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductTracking_TblProduct">
+          <End Role="TblProduct" Type="Self.TblProduct" Multiplicity="0..1" />
+          <End Role="TblProductTracking" Type="Self.TblProductTracking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblProduct">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductTracking">
+              <PropertyRef Name="PRODUCT" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductAcceptance_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblProductAcceptance" Type="Self.TblProductAcceptance" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductAcceptance">
+              <PropertyRef Name="PERSONNEL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TblProductMovement_TblStaff">
+          <End Role="TblStaff" Type="Self.TblStaff" Multiplicity="0..1" />
+          <End Role="TblProductMovement" Type="Self.TblProductMovement" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TblStaff">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TblProductMovement">
+              <PropertyRef Name="STAFF" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DbServicesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="TblAdmin" EntityType="Self.TblAdmin" />
+          <EntitySet Name="TblCategory" EntityType="Self.TblCategory" />
+          <EntitySet Name="TblCurrent" EntityType="Self.TblCurrent" />
+          <EntitySet Name="TblDepartment" EntityType="Self.TblDepartment" />
+          <EntitySet Name="TblExpense" EntityType="Self.TblExpense" />
+          <EntitySet Name="TblFaultDetail" EntityType="Self.TblFaultDetail" />
+          <EntitySet Name="TblInvoiceDetail" EntityType="Self.TblInvoiceDetail" />
+          <EntitySet Name="TblInvoiceInformation" EntityType="Self.TblInvoiceInformation" />
+          <EntitySet Name="TblNotes" EntityType="Self.TblNotes" />
+          <EntitySet Name="TblProduct" EntityType="Self.TblProduct" />
+          <EntitySet Name="TblProductAcceptance" EntityType="Self.TblProductAcceptance" />
+          <EntitySet Name="TblProductMovement" EntityType="Self.TblProductMovement" />
+          <EntitySet Name="TblProductTracking" EntityType="Self.TblProductTracking" />
+          <EntitySet Name="TblStaff" EntityType="Self.TblStaff" />
+          <AssociationSet Name="FK_TblProduct_TblCategory" Association="Self.FK_TblProduct_TblCategory">
+            <End Role="TblCategory" EntitySet="TblCategory" />
+            <End Role="TblProduct" EntitySet="TblProduct" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblInvoiceInformation_TblCurrent" Association="Self.FK_TblInvoiceInformation_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblCurrent" Association="Self.FK_TblProductAcceptance_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblCurrent" Association="Self.FK_TblProductMovement_TblCurrent">
+            <End Role="TblCurrent" EntitySet="TblCurrent" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblStaff_TblDepartment" Association="Self.FK_TblStaff_TblDepartment">
+            <End Role="TblDepartment" EntitySet="TblDepartment" />
+            <End Role="TblStaff" EntitySet="TblStaff" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblInvoiceDetail_TblInvoiceInformation" Association="Self.FK_TblInvoiceDetail_TblInvoiceInformation">
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+            <End Role="TblInvoiceDetail" EntitySet="TblInvoiceDetail" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblInvoiceInformation_TblStaff" Association="Self.FK_TblInvoiceInformation_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblInvoiceInformation" EntitySet="TblInvoiceInformation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblProduct" Association="Self.FK_TblProductAcceptance_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblProduct" Association="Self.FK_TblProductMovement_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductTracking_TblProduct" Association="Self.FK_TblProductTracking_TblProduct">
+            <End Role="TblProduct" EntitySet="TblProduct" />
+            <End Role="TblProductTracking" EntitySet="TblProductTracking" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductAcceptance_TblStaff" Association="Self.FK_TblProductAcceptance_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblProductAcceptance" EntitySet="TblProductAcceptance" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TblProductMovement_TblStaff" Association="Self.FK_TblProductMovement_TblStaff">
+            <End Role="TblStaff" EntitySet="TblStaff" />
+            <End Role="TblProductMovement" EntitySet="TblProductMovement" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DbServicesModelStoreContainer" CdmEntityContainer="DbServicesEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DbServicesModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblAdmin">
+            <EntityTypeMapping TypeName="DbServicesModel.TblAdmin">
+              <MappingFragment StoreEntitySet="TblAdmin">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblCategory">
+            <EntityTypeMapping TypeName="DbServicesModel.TblCategory">
+              <MappingFragment StoreEntitySet="TblCategory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblCurrent">
+            <EntityTypeMapping TypeName="DbServicesModel.TblCurrent">
+              <MappingFragment StoreEntitySet="TblCurrent">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+                <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="PROVINCE" ColumnName="PROVINCE" />
+                <ScalarProperty Name="BANK" ColumnName="BANK" />
+                <ScalarProperty Name="TAXOFFICE" ColumnName="TAXOFFICE" />
+                <ScalarProperty Name="TAXNO" ColumnName="TAXNO" />
+                <ScalarProperty Name="STATU" ColumnName="STATU" />
+                <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblDepartment">
+            <EntityTypeMapping TypeName="DbServicesModel.TblDepartment">
+              <MappingFragment StoreEntitySet="TblDepartment">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblExpense">
+            <EntityTypeMapping TypeName="DbServicesModel.TblExpense">
+              <MappingFragment StoreEntitySet="TblExpense">
+                <ScalarProperty Name="EXPENSEID" ColumnName="EXPENSEID" />
+                <ScalarProperty Name="EXPENSEEXPLANATION" ColumnName="EXPENSEEXPLANATION" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblFaultDetail">
+            <EntityTypeMapping TypeName="DbServicesModel.TblFaultDetail">
+              <MappingFragment StoreEntitySet="TblFaultDetail">
+                <ScalarProperty Name="FAULTID" ColumnName="FAULTID" />
+                <ScalarProperty Name="PROCESS" ColumnName="PROCESS" />
+                <ScalarProperty Name="PROBLEM" ColumnName="PROBLEM" />
+                <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+                <ScalarProperty Name="PREPRICE" ColumnName="PREPRICE" />
+                <ScalarProperty Name="NETPRICE" ColumnName="NETPRICE" />
+                <ScalarProperty Name="PROCESSES" ColumnName="PROCESSES" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblInvoiceDetail">
+            <EntityTypeMapping TypeName="DbServicesModel.TblInvoiceDetail">
+              <MappingFragment StoreEntitySet="TblInvoiceDetail">
+                <ScalarProperty Name="INVOICEDETAILID" ColumnName="INVOICEDETAILID" />
+                <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+                <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+                <ScalarProperty Name="TOTALAMOUNT" ColumnName="TOTALAMOUNT" />
+                <ScalarProperty Name="INVOICEID" ColumnName="INVOICEID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblInvoiceInformation">
+            <EntityTypeMapping TypeName="DbServicesModel.TblInvoiceInformation">
+              <MappingFragment StoreEntitySet="TblInvoiceInformation">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SERIES" ColumnName="SERIES" />
+                <ScalarProperty Name="SERIESNO" ColumnName="SERIESNO" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="HOURS" ColumnName="HOURS" />
+                <ScalarProperty Name="TAXOFFICE" ColumnName="TAXOFFICE" />
+                <ScalarProperty Name="CURRENT" ColumnName="CURRENT" />
+                <ScalarProperty Name="STAFF" ColumnName="STAFF" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblNotes">
+            <EntityTypeMapping TypeName="DbServicesModel.TblNotes">
+              <MappingFragment StoreEntitySet="TblNotes">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TITLE" ColumnName="TITLE" />
+                <ScalarProperty Name="CONTENT" ColumnName="CONTENT" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblProduct">
+            <EntityTypeMapping TypeName="DbServicesModel.TblProduct">
+              <MappingFragment StoreEntitySet="TblProduct">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="BRAND" ColumnName="BRAND" />
+                <ScalarProperty Name="PURCHASEPRICE" ColumnName="PURCHASEPRICE" />
+                <ScalarProperty Name="SALEPRICE" ColumnName="SALEPRICE" />
+                <ScalarProperty Name="STOCK" ColumnName="STOCK" />
+                <ScalarProperty Name="CATEGORY" ColumnName="CATEGORY" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblProductAcceptance">
+            <EntityTypeMapping TypeName="DbServicesModel.TblProductAcceptance">
+              <MappingFragment StoreEntitySet="TblProductAcceptance">
+                <ScalarProperty Name="PROCESSID" ColumnName="PROCESSID" />
+                <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+                <ScalarProperty Name="CURRENT" ColumnName="CURRENT" />
+                <ScalarProperty Name="PERSONNEL" ColumnName="PERSONNEL" />
+                <ScalarProperty Name="DATEOFARRIVAL" ColumnName="DATEOFARRIVAL" />
+                <ScalarProperty Name="EXITDATE" ColumnName="EXITDATE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblProductMovement">
+            <EntityTypeMapping TypeName="DbServicesModel.TblProductMovement">
+              <MappingFragment StoreEntitySet="TblProductMovement">
+                <ScalarProperty Name="MOVEMENTID" ColumnName="MOVEMENTID" />
+                <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+                <ScalarProperty Name="CUSTOMER" ColumnName="CUSTOMER" />
+                <ScalarProperty Name="STAFF" ColumnName="STAFF" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="NUMBER" ColumnName="NUMBER" />
+                <ScalarProperty Name="PRICE" ColumnName="PRICE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblProductTracking">
+            <EntityTypeMapping TypeName="DbServicesModel.TblProductTracking">
+              <MappingFragment StoreEntitySet="TblProductTracking">
+                <ScalarProperty Name="FOLLOWID" ColumnName="FOLLOWID" />
+                <ScalarProperty Name="PRODUCT" ColumnName="PRODUCT" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+                <ScalarProperty Name="DATE" ColumnName="DATE" />
+                <ScalarProperty Name="TRACKINGCODE" ColumnName="TRACKINGCODE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TblStaff">
+            <EntityTypeMapping TypeName="DbServicesModel.TblStaff">
+              <MappingFragment StoreEntitySet="TblStaff">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="SURNAME" ColumnName="SURNAME" />
+                <ScalarProperty Name="DEPARTMENT" ColumnName="DEPARTMENT" />
+                <ScalarProperty Name="PHOTO" ColumnName="PHOTO" />
+                <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+                <ScalarProperty Name="TELEPHONE" ColumnName="TELEPHONE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
