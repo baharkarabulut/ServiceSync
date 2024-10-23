@@ -3,15 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -22,44 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:44:45.117Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmProductList.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmProductList.cs",
-              "RelativeDocumentMoniker": "Forms\\FrmProductList.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmProductList.cs [Design]",
-              "RelativeToolTip": "Forms\\FrmProductList.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T19:43:11.598Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -67,7 +26,16 @@
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T12:14:15.462Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
