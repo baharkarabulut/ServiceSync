@@ -30,38 +30,44 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmYeniUrun));
 			this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-			this.txtUrunAd = new DevExpress.XtraEditors.TextEdit();
+			this.UrunAd = new DevExpress.XtraEditors.TextEdit();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.txtMarkaAd = new DevExpress.XtraEditors.TextEdit();
+			this.MarkaAd = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.txtKategori = new DevExpress.XtraEditors.TextEdit();
+			this.Kategori = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel4 = new System.Windows.Forms.Panel();
-			this.txtAlisFiyat = new DevExpress.XtraEditors.TextEdit();
+			this.AlisFiyat = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.txtSatisFiyat = new DevExpress.XtraEditors.TextEdit();
+			this.SatisFiyat = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit5 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel6 = new System.Windows.Forms.Panel();
-			this.txtStok = new DevExpress.XtraEditors.TextEdit();
+			this.Stok = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit6 = new DevExpress.XtraEditors.PictureEdit();
 			this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
 			this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
 			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
 			this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
+			this.txtUrunAd = new System.Windows.Forms.TextBox();
+			this.txtMarkaAd = new System.Windows.Forms.TextBox();
+			this.txtKategori = new System.Windows.Forms.TextBox();
+			this.txtStok = new System.Windows.Forms.TextBox();
+			this.txtAlisFiyat = new System.Windows.Forms.TextBox();
+			this.txtSatisFiyat = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtMarkaAd.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.UrunAd.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.MarkaAd.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtAlisFiyat.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.AlisFiyat.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtSatisFiyat.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.SatisFiyat.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtStok.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.Stok.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
@@ -79,20 +85,20 @@
 			this.pictureEdit1.Size = new System.Drawing.Size(59, 46);
 			this.pictureEdit1.TabIndex = 0;
 			// 
-			// txtUrunAd
+			// UrunAd
 			// 
-			this.txtUrunAd.EditValue = "Ürün Adı:";
-			this.txtUrunAd.Location = new System.Drawing.Point(117, 129);
-			this.txtUrunAd.Name = "txtUrunAd";
-			this.txtUrunAd.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtUrunAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtUrunAd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtUrunAd.Properties.Appearance.Options.UseBackColor = true;
-			this.txtUrunAd.Properties.Appearance.Options.UseFont = true;
-			this.txtUrunAd.Properties.Appearance.Options.UseForeColor = true;
-			this.txtUrunAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtUrunAd.Size = new System.Drawing.Size(343, 24);
-			this.txtUrunAd.TabIndex = 1;
+			this.UrunAd.EditValue = "Ürün Adı:";
+			this.UrunAd.Location = new System.Drawing.Point(117, 129);
+			this.UrunAd.Name = "UrunAd";
+			this.UrunAd.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.UrunAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.UrunAd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.UrunAd.Properties.Appearance.Options.UseBackColor = true;
+			this.UrunAd.Properties.Appearance.Options.UseFont = true;
+			this.UrunAd.Properties.Appearance.Options.UseForeColor = true;
+			this.UrunAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.UrunAd.Size = new System.Drawing.Size(77, 24);
+			this.UrunAd.TabIndex = 1;
 			// 
 			// panel1
 			// 
@@ -110,20 +116,20 @@
 			this.panel2.Size = new System.Drawing.Size(347, 3);
 			this.panel2.TabIndex = 5;
 			// 
-			// txtMarkaAd
+			// MarkaAd
 			// 
-			this.txtMarkaAd.EditValue = "Marka Adı:";
-			this.txtMarkaAd.Location = new System.Drawing.Point(117, 179);
-			this.txtMarkaAd.Name = "txtMarkaAd";
-			this.txtMarkaAd.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtMarkaAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtMarkaAd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtMarkaAd.Properties.Appearance.Options.UseBackColor = true;
-			this.txtMarkaAd.Properties.Appearance.Options.UseFont = true;
-			this.txtMarkaAd.Properties.Appearance.Options.UseForeColor = true;
-			this.txtMarkaAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtMarkaAd.Size = new System.Drawing.Size(343, 24);
-			this.txtMarkaAd.TabIndex = 4;
+			this.MarkaAd.EditValue = "Marka Adı:";
+			this.MarkaAd.Location = new System.Drawing.Point(117, 179);
+			this.MarkaAd.Name = "MarkaAd";
+			this.MarkaAd.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.MarkaAd.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.MarkaAd.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.MarkaAd.Properties.Appearance.Options.UseBackColor = true;
+			this.MarkaAd.Properties.Appearance.Options.UseFont = true;
+			this.MarkaAd.Properties.Appearance.Options.UseForeColor = true;
+			this.MarkaAd.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.MarkaAd.Size = new System.Drawing.Size(88, 24);
+			this.MarkaAd.TabIndex = 4;
 			// 
 			// pictureEdit2
 			// 
@@ -145,20 +151,20 @@
 			this.panel3.Size = new System.Drawing.Size(347, 3);
 			this.panel3.TabIndex = 8;
 			// 
-			// txtKategori
+			// Kategori
 			// 
-			this.txtKategori.EditValue = "Kategori:";
-			this.txtKategori.Location = new System.Drawing.Point(117, 228);
-			this.txtKategori.Name = "txtKategori";
-			this.txtKategori.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtKategori.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtKategori.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtKategori.Properties.Appearance.Options.UseBackColor = true;
-			this.txtKategori.Properties.Appearance.Options.UseFont = true;
-			this.txtKategori.Properties.Appearance.Options.UseForeColor = true;
-			this.txtKategori.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtKategori.Size = new System.Drawing.Size(343, 24);
-			this.txtKategori.TabIndex = 7;
+			this.Kategori.EditValue = "Kategori:";
+			this.Kategori.Location = new System.Drawing.Point(117, 228);
+			this.Kategori.Name = "Kategori";
+			this.Kategori.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.Kategori.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Kategori.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.Kategori.Properties.Appearance.Options.UseBackColor = true;
+			this.Kategori.Properties.Appearance.Options.UseFont = true;
+			this.Kategori.Properties.Appearance.Options.UseForeColor = true;
+			this.Kategori.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.Kategori.Size = new System.Drawing.Size(77, 24);
+			this.Kategori.TabIndex = 7;
 			// 
 			// pictureEdit3
 			// 
@@ -180,20 +186,20 @@
 			this.panel4.Size = new System.Drawing.Size(347, 3);
 			this.panel4.TabIndex = 11;
 			// 
-			// txtAlisFiyat
+			// AlisFiyat
 			// 
-			this.txtAlisFiyat.EditValue = "Alış Fiyatı:";
-			this.txtAlisFiyat.Location = new System.Drawing.Point(117, 332);
-			this.txtAlisFiyat.Name = "txtAlisFiyat";
-			this.txtAlisFiyat.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtAlisFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtAlisFiyat.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtAlisFiyat.Properties.Appearance.Options.UseBackColor = true;
-			this.txtAlisFiyat.Properties.Appearance.Options.UseFont = true;
-			this.txtAlisFiyat.Properties.Appearance.Options.UseForeColor = true;
-			this.txtAlisFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtAlisFiyat.Size = new System.Drawing.Size(343, 24);
-			this.txtAlisFiyat.TabIndex = 10;
+			this.AlisFiyat.EditValue = "Alış Fiyatı:";
+			this.AlisFiyat.Location = new System.Drawing.Point(117, 332);
+			this.AlisFiyat.Name = "AlisFiyat";
+			this.AlisFiyat.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.AlisFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.AlisFiyat.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.AlisFiyat.Properties.Appearance.Options.UseBackColor = true;
+			this.AlisFiyat.Properties.Appearance.Options.UseFont = true;
+			this.AlisFiyat.Properties.Appearance.Options.UseForeColor = true;
+			this.AlisFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.AlisFiyat.Size = new System.Drawing.Size(77, 24);
+			this.AlisFiyat.TabIndex = 10;
 			// 
 			// pictureEdit4
 			// 
@@ -215,20 +221,20 @@
 			this.panel5.Size = new System.Drawing.Size(347, 3);
 			this.panel5.TabIndex = 14;
 			// 
-			// txtSatisFiyat
+			// SatisFiyat
 			// 
-			this.txtSatisFiyat.EditValue = "Satış Fiyatı:";
-			this.txtSatisFiyat.Location = new System.Drawing.Point(117, 382);
-			this.txtSatisFiyat.Name = "txtSatisFiyat";
-			this.txtSatisFiyat.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtSatisFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtSatisFiyat.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtSatisFiyat.Properties.Appearance.Options.UseBackColor = true;
-			this.txtSatisFiyat.Properties.Appearance.Options.UseFont = true;
-			this.txtSatisFiyat.Properties.Appearance.Options.UseForeColor = true;
-			this.txtSatisFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtSatisFiyat.Size = new System.Drawing.Size(343, 24);
-			this.txtSatisFiyat.TabIndex = 13;
+			this.SatisFiyat.EditValue = "Satış Fiyatı:";
+			this.SatisFiyat.Location = new System.Drawing.Point(117, 382);
+			this.SatisFiyat.Name = "SatisFiyat";
+			this.SatisFiyat.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.SatisFiyat.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SatisFiyat.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.SatisFiyat.Properties.Appearance.Options.UseBackColor = true;
+			this.SatisFiyat.Properties.Appearance.Options.UseFont = true;
+			this.SatisFiyat.Properties.Appearance.Options.UseForeColor = true;
+			this.SatisFiyat.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.SatisFiyat.Size = new System.Drawing.Size(88, 24);
+			this.SatisFiyat.TabIndex = 13;
 			// 
 			// pictureEdit5
 			// 
@@ -250,20 +256,20 @@
 			this.panel6.Size = new System.Drawing.Size(347, 3);
 			this.panel6.TabIndex = 17;
 			// 
-			// txtStok
+			// Stok
 			// 
-			this.txtStok.EditValue = "Stok Sayısı:";
-			this.txtStok.Location = new System.Drawing.Point(117, 280);
-			this.txtStok.Name = "txtStok";
-			this.txtStok.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
-			this.txtStok.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtStok.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-			this.txtStok.Properties.Appearance.Options.UseBackColor = true;
-			this.txtStok.Properties.Appearance.Options.UseFont = true;
-			this.txtStok.Properties.Appearance.Options.UseForeColor = true;
-			this.txtStok.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-			this.txtStok.Size = new System.Drawing.Size(343, 24);
-			this.txtStok.TabIndex = 16;
+			this.Stok.EditValue = "Stok Sayısı:";
+			this.Stok.Location = new System.Drawing.Point(117, 280);
+			this.Stok.Name = "Stok";
+			this.Stok.Properties.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.Stok.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Stok.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+			this.Stok.Properties.Appearance.Options.UseBackColor = true;
+			this.Stok.Properties.Appearance.Options.UseFont = true;
+			this.Stok.Properties.Appearance.Options.UseForeColor = true;
+			this.Stok.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+			this.Stok.Size = new System.Drawing.Size(88, 24);
+			this.Stok.TabIndex = 16;
 			// 
 			// pictureEdit6
 			// 
@@ -326,6 +332,60 @@
 			this.BtnVazgec.Text = "VAZGEÇ";
 			this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
 			// 
+			// txtUrunAd
+			// 
+			this.txtUrunAd.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtUrunAd.Location = new System.Drawing.Point(202, 131);
+			this.txtUrunAd.Margin = new System.Windows.Forms.Padding(5);
+			this.txtUrunAd.Name = "txtUrunAd";
+			this.txtUrunAd.Size = new System.Drawing.Size(262, 21);
+			this.txtUrunAd.TabIndex = 22;
+			// 
+			// txtMarkaAd
+			// 
+			this.txtMarkaAd.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtMarkaAd.Location = new System.Drawing.Point(202, 181);
+			this.txtMarkaAd.Margin = new System.Windows.Forms.Padding(5);
+			this.txtMarkaAd.Name = "txtMarkaAd";
+			this.txtMarkaAd.Size = new System.Drawing.Size(262, 21);
+			this.txtMarkaAd.TabIndex = 23;
+			// 
+			// txtKategori
+			// 
+			this.txtKategori.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtKategori.Location = new System.Drawing.Point(202, 230);
+			this.txtKategori.Margin = new System.Windows.Forms.Padding(5);
+			this.txtKategori.Name = "txtKategori";
+			this.txtKategori.Size = new System.Drawing.Size(262, 21);
+			this.txtKategori.TabIndex = 24;
+			// 
+			// txtStok
+			// 
+			this.txtStok.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtStok.Location = new System.Drawing.Point(202, 282);
+			this.txtStok.Margin = new System.Windows.Forms.Padding(5);
+			this.txtStok.Name = "txtStok";
+			this.txtStok.Size = new System.Drawing.Size(262, 21);
+			this.txtStok.TabIndex = 25;
+			// 
+			// txtAlisFiyat
+			// 
+			this.txtAlisFiyat.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtAlisFiyat.Location = new System.Drawing.Point(202, 334);
+			this.txtAlisFiyat.Margin = new System.Windows.Forms.Padding(5);
+			this.txtAlisFiyat.Name = "txtAlisFiyat";
+			this.txtAlisFiyat.Size = new System.Drawing.Size(262, 21);
+			this.txtAlisFiyat.TabIndex = 26;
+			// 
+			// txtSatisFiyat
+			// 
+			this.txtSatisFiyat.BackColor = System.Drawing.Color.PaleGoldenrod;
+			this.txtSatisFiyat.Location = new System.Drawing.Point(202, 384);
+			this.txtSatisFiyat.Margin = new System.Windows.Forms.Padding(5);
+			this.txtSatisFiyat.Name = "txtSatisFiyat";
+			this.txtSatisFiyat.Size = new System.Drawing.Size(262, 21);
+			this.txtSatisFiyat.TabIndex = 27;
+			// 
 			// FrmYeniUrun
 			// 
 			this.Appearance.BackColor = System.Drawing.Color.PaleGoldenrod;
@@ -333,73 +393,86 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(540, 532);
+			this.Controls.Add(this.txtSatisFiyat);
+			this.Controls.Add(this.txtAlisFiyat);
+			this.Controls.Add(this.txtStok);
+			this.Controls.Add(this.txtKategori);
+			this.Controls.Add(this.txtMarkaAd);
+			this.Controls.Add(this.txtUrunAd);
 			this.Controls.Add(this.BtnVazgec);
 			this.Controls.Add(this.BtnKaydet);
 			this.Controls.Add(this.textEdit7);
 			this.Controls.Add(this.pictureEdit7);
 			this.Controls.Add(this.panel6);
-			this.Controls.Add(this.txtStok);
+			this.Controls.Add(this.Stok);
 			this.Controls.Add(this.pictureEdit6);
 			this.Controls.Add(this.panel5);
-			this.Controls.Add(this.txtSatisFiyat);
+			this.Controls.Add(this.SatisFiyat);
 			this.Controls.Add(this.pictureEdit5);
 			this.Controls.Add(this.panel4);
-			this.Controls.Add(this.txtAlisFiyat);
+			this.Controls.Add(this.AlisFiyat);
 			this.Controls.Add(this.pictureEdit4);
 			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.txtKategori);
+			this.Controls.Add(this.Kategori);
 			this.Controls.Add(this.pictureEdit3);
 			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.txtMarkaAd);
+			this.Controls.Add(this.MarkaAd);
 			this.Controls.Add(this.pictureEdit2);
 			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.txtUrunAd);
+			this.Controls.Add(this.UrunAd);
 			this.Controls.Add(this.pictureEdit1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Name = "FrmYeniUrun";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmYeniUrun";
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtUrunAd.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtMarkaAd.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.UrunAd.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.MarkaAd.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtKategori.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Kategori.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtAlisFiyat.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.AlisFiyat.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit4.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtSatisFiyat.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.SatisFiyat.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit5.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtStok.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Stok.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit6.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit7.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-		private DevExpress.XtraEditors.TextEdit txtUrunAd;
+		private DevExpress.XtraEditors.TextEdit UrunAd;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
-		private DevExpress.XtraEditors.TextEdit txtMarkaAd;
+		private DevExpress.XtraEditors.TextEdit MarkaAd;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit2;
 		private System.Windows.Forms.Panel panel3;
-		private DevExpress.XtraEditors.TextEdit txtKategori;
+		private DevExpress.XtraEditors.TextEdit Kategori;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit3;
 		private System.Windows.Forms.Panel panel4;
-		private DevExpress.XtraEditors.TextEdit txtAlisFiyat;
+		private DevExpress.XtraEditors.TextEdit AlisFiyat;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit4;
 		private System.Windows.Forms.Panel panel5;
-		private DevExpress.XtraEditors.TextEdit txtSatisFiyat;
+		private DevExpress.XtraEditors.TextEdit SatisFiyat;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit5;
 		private System.Windows.Forms.Panel panel6;
-		private DevExpress.XtraEditors.TextEdit txtStok;
+		private DevExpress.XtraEditors.TextEdit Stok;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit6;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit7;
 		private DevExpress.XtraEditors.TextEdit textEdit7;
 		private DevExpress.XtraEditors.SimpleButton BtnKaydet;
 		private DevExpress.XtraEditors.SimpleButton BtnVazgec;
+		private System.Windows.Forms.TextBox txtUrunAd;
+		private System.Windows.Forms.TextBox txtMarkaAd;
+		private System.Windows.Forms.TextBox txtKategori;
+		private System.Windows.Forms.TextBox txtStok;
+		private System.Windows.Forms.TextBox txtAlisFiyat;
+		private System.Windows.Forms.TextBox txtSatisFiyat;
 	}
 }
