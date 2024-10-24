@@ -26,19 +26,20 @@ namespace ServiceSync
         }
     
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
-        public virtual DbSet<TblAdmin> TblAdmin { get; set; }
-        public virtual DbSet<TblCategory> TblCategory { get; set; }
-        public virtual DbSet<TblCurrent> TblCurrent { get; set; }
-        public virtual DbSet<TblDepartment> TblDepartment { get; set; }
-        public virtual DbSet<TblExpense> TblExpense { get; set; }
-        public virtual DbSet<TblFaultDetail> TblFaultDetail { get; set; }
-        public virtual DbSet<TblInvoiceDetail> TblInvoiceDetail { get; set; }
-        public virtual DbSet<TblInvoiceInformation> TblInvoiceInformation { get; set; }
-        public virtual DbSet<TblNotes> TblNotes { get; set; }
-        public virtual DbSet<TblProduct> TblProduct { get; set; }
-        public virtual DbSet<TblProductAcceptance> TblProductAcceptance { get; set; }
-        public virtual DbSet<TblProductMovement> TblProductMovement { get; set; }
-        public virtual DbSet<TblProductTracking> TblProductTracking { get; set; }
-        public virtual DbSet<TblStaff> TblStaff { get; set; }
+        public virtual DbSet<TblAARIZADETAY> TblAARIZADETAY { get; set; }
+        public virtual DbSet<TblADMIN> TblADMIN { get; set; }
+        public virtual DbSet<TbLARACLAR> TbLARACLAR { get; set; }
+        public virtual DbSet<TblCARI> TblCARI { get; set; }
+        public virtual DbSet<TblDEPARTMAN> TblDEPARTMAN { get; set; }
+        public virtual DbSet<TblFATURABILGILERI> TblFATURABILGILERI { get; set; }
+        public virtual DbSet<TblFATURADETAY> TblFATURADETAY { get; set; }
+        public virtual DbSet<TblGIDER> TblGIDER { get; set; }
+        public virtual DbSet<TblKATEGORI> TblKATEGORI { get; set; }
+        public virtual DbSet<TblNIOTLAR> TblNIOTLAR { get; set; }
+        public virtual DbSet<TblPERSONEL> TblPERSONEL { get; set; }
+        public virtual DbSet<TblURUN> TblURUN { get; set; }
+        public virtual DbSet<TblURUNHAREKETLERI> TblURUNHAREKETLERI { get; set; }
+        public virtual DbSet<TblURUNKABULU> TblURUNKABULU { get; set; }
+        public virtual DbSet<TblURUNTAKIBI> TblURUNTAKIBI { get; set; }
     }
 }

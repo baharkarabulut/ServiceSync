@@ -12,26 +12,26 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblInvoiceInformation
+    public partial class TblFATURABILGILERI
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TblInvoiceInformation()
+        public TblFATURABILGILERI()
         {
-            this.TblInvoiceDetail = new HashSet<TblInvoiceDetail>();
+            this.TblFATURADETAY = new HashSet<TblFATURADETAY>();
         }
     
         public int ID { get; set; }
-        public string SERIES { get; set; }
-        public string SERIESNO { get; set; }
-        public Nullable<System.DateTime> DATE { get; set; }
-        public string HOURS { get; set; }
-        public string TAXOFFICE { get; set; }
-        public Nullable<int> CURRENT { get; set; }
-        public Nullable<short> STAFF { get; set; }
+        public string SERI { get; set; }
+        public string SERINO { get; set; }
+        public Nullable<System.DateTime> TARIH { get; set; }
+        public string SAAT { get; set; }
+        public string VERGIDAIRESI { get; set; }
+        public Nullable<int> CARI { get; set; }
+        public Nullable<short> PERSONEL { get; set; }
     
-        public virtual TblCurrent TblCurrent { get; set; }
+        public virtual TblCARI TblCARI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblInvoiceDetail> TblInvoiceDetail { get; set; }
-        public virtual TblStaff TblStaff { get; set; }
+        public virtual ICollection<TblFATURADETAY> TblFATURADETAY { get; set; }
+        public virtual TblPERSONEL TblPERSONEL { get; set; }
     }
 }

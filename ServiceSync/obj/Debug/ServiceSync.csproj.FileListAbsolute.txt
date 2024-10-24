@@ -39,7 +39,6 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.XtraTr
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.Office.v24.1.Core.xml
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.csproj.AssemblyReference.cache
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Form1.resources
-C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmProductList.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Properties.Resources.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.csproj.GenerateResource.cache
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.exe.licenses
@@ -47,3 +46,5 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.cspro
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceS.7F60AE74.Up2Date
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.exe
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.pdb
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmUrunListesi.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniUrun.resources

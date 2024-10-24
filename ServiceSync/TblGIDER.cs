@@ -12,10 +12,11 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblADMIN
+    public partial class TblGIDER
     {
-        public byte ID { get; set; }
-        public string KULLANICIADI { get; set; }
-        public string SIFRE { get; set; }
+        public int GIDERID { get; set; }
+        public string GIDERACIKLAMASI { get; set; }
+        public Nullable<System.DateTime> TARİH { get; set; }
+        public Nullable<decimal> TUTAR { get; set; }
     }
 }

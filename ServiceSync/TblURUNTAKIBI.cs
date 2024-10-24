@@ -12,11 +12,14 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblExpense
+    public partial class TblURUNTAKIBI
     {
-        public int EXPENSEID { get; set; }
-        public string EXPENSEEXPLANATION { get; set; }
-        public Nullable<System.DateTime> DATE { get; set; }
-        public Nullable<decimal> AMOUNT { get; set; }
+        public int TAKIPID { get; set; }
+        public Nullable<int> URUN { get; set; }
+        public string DURUM { get; set; }
+        public Nullable<int> TARIH { get; set; }
+        public string TAKIPKODU { get; set; }
+    
+        public virtual TblURUN TblURUN { get; set; }
     }
 }

@@ -12,14 +12,17 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblProductTracking
+    public partial class TblURUNKABULU
     {
-        public int FOLLOWID { get; set; }
-        public Nullable<int> PRODUCT { get; set; }
-        public string STATUS { get; set; }
-        public Nullable<int> DATE { get; set; }
-        public string TRACKINGCODE { get; set; }
+        public int ISLEMID { get; set; }
+        public Nullable<int> URUN { get; set; }
+        public Nullable<int> CARI { get; set; }
+        public Nullable<short> PERSONEL { get; set; }
+        public Nullable<System.DateTime> ISLEMTARIHI { get; set; }
+        public Nullable<System.DateTime> CIKISTARIHI { get; set; }
     
-        public virtual TblProduct TblProduct { get; set; }
+        public virtual TblCARI TblCARI { get; set; }
+        public virtual TblPERSONEL TblPERSONEL { get; set; }
+        public virtual TblURUN TblURUN { get; set; }
     }
 }

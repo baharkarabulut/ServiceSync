@@ -24,8 +24,19 @@ namespace ServiceSync
 
 		private void BtnProductListForm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			Forms.FrmProductList fr = new Forms.FrmProductList();
+			Forms.FrmUrunListesi fr = new Forms.FrmUrunListesi();
 			fr.MdiParent = this;
+			fr.Show();
+		}
+
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void BtnYeniUrun_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmYeniUrun fr = new Forms.FrmYeniUrun();
 			fr.Show();
 		}
 	}

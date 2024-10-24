@@ -12,11 +12,15 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblNotes
+    public partial class TblFATURADETAY
     {
-        public int ID { get; set; }
-        public string TITLE { get; set; }
-        public string CONTENT { get; set; }
-        public Nullable<bool> STATUS { get; set; }
+        public int FATURADETAYID { get; set; }
+        public string URUN { get; set; }
+        public Nullable<short> NUMARA { get; set; }
+        public Nullable<decimal> FIYAT { get; set; }
+        public Nullable<decimal> TUTAR { get; set; }
+        public Nullable<int> FATURAID { get; set; }
+    
+        public virtual TblFATURABILGILERI TblFATURABILGILERI { get; set; }
     }
 }

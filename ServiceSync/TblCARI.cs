@@ -12,30 +12,34 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblStaff
+    public partial class TblCARI
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TblStaff()
+        public TblCARI()
         {
-            this.TblInvoiceInformation = new HashSet<TblInvoiceInformation>();
-            this.TblProductAcceptance = new HashSet<TblProductAcceptance>();
-            this.TblProductMovement = new HashSet<TblProductMovement>();
+            this.TblFATURABILGILERI = new HashSet<TblFATURABILGILERI>();
+            this.TblURUNKABULU = new HashSet<TblURUNKABULU>();
+            this.TblURUNHAREKETLERI = new HashSet<TblURUNHAREKETLERI>();
         }
     
-        public short ID { get; set; }
-        public string NAME { get; set; }
-        public string SURNAME { get; set; }
-        public Nullable<byte> DEPARTMENT { get; set; }
-        public string PHOTO { get; set; }
+        public int ID { get; set; }
+        public string AD { get; set; }
+        public string SOYAD { get; set; }
+        public string TELEFON { get; set; }
         public string MAIL { get; set; }
-        public string TELEPHONE { get; set; }
+        public string IL { get; set; }
+        public string ILCE { get; set; }
+        public string BANKA { get; set; }
+        public string VERGIDAIRESI { get; set; }
+        public string VERGINO { get; set; }
+        public string STATU { get; set; }
+        public string ADRES { get; set; }
     
-        public virtual TblDepartment TblDepartment { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblInvoiceInformation> TblInvoiceInformation { get; set; }
+        public virtual ICollection<TblFATURABILGILERI> TblFATURABILGILERI { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblProductAcceptance> TblProductAcceptance { get; set; }
+        public virtual ICollection<TblURUNKABULU> TblURUNKABULU { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblProductMovement> TblProductMovement { get; set; }
+        public virtual ICollection<TblURUNHAREKETLERI> TblURUNHAREKETLERI { get; set; }
     }
 }

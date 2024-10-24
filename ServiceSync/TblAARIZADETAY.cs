@@ -12,14 +12,14 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblFaultDetail
+    public partial class TblAARIZADETAY
     {
-        public int FAULTID { get; set; }
-        public Nullable<int> PROCESS { get; set; }
+        public int ARIZAID { get; set; }
+        public Nullable<int> ISLEM { get; set; }
         public string PROBLEM { get; set; }
-        public string EXPLANATION { get; set; }
-        public Nullable<decimal> PREPRICE { get; set; }
-        public Nullable<decimal> NETPRICE { get; set; }
-        public string PROCESSES { get; set; }
+        public string ACIKLAMA { get; set; }
+        public Nullable<decimal> ONFIYAT { get; set; }
+        public Nullable<decimal> NETFIYAT { get; set; }
+        public string ISLEMLER { get; set; }
     }
 }

@@ -12,19 +12,18 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblDepartment
+    public partial class TblKATEGORI
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public TblDepartment()
+        public TblKATEGORI()
         {
-            this.TblStaff = new HashSet<TblStaff>();
+            this.TblURUN = new HashSet<TblURUN>();
         }
     
         public byte ID { get; set; }
-        public string NAME { get; set; }
-        public string EXPLANATION { get; set; }
+        public string AD { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TblStaff> TblStaff { get; set; }
+        public virtual ICollection<TblURUN> TblURUN { get; set; }
     }
 }

@@ -12,15 +12,11 @@ namespace ServiceSync
     using System;
     using System.Collections.Generic;
     
-    public partial class TblInvoiceDetail
+    public partial class TblNIOTLAR
     {
-        public int INVOICEDETAILID { get; set; }
-        public string PRODUCT { get; set; }
-        public Nullable<short> NUMBER { get; set; }
-        public Nullable<decimal> PRICE { get; set; }
-        public Nullable<decimal> TOTALAMOUNT { get; set; }
-        public Nullable<int> INVOICEID { get; set; }
-    
-        public virtual TblInvoiceInformation TblInvoiceInformation { get; set; }
+        public int ID { get; set; }
+        public string BASLIK { get; set; }
+        public string ACIKLAMA { get; set; }
+        public Nullable<bool> DURUM { get; set; }
     }
 }
