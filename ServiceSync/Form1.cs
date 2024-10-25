@@ -39,5 +39,18 @@ namespace ServiceSync
 			Forms.FrmYeniUrun fr = new Forms.FrmYeniUrun();
 			fr.Show();
 		}
+
+		private void BtnKategoriListe_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmKategori fr = new Forms.FrmKategori();
+			fr.MdiParent = this;
+			fr.Show();
+		}
+
+		private void BtnYeniKategori_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmYeniKategori fr = new Forms.FrmYeniKategori();
+			fr.Show();
+		}
 	}
 }

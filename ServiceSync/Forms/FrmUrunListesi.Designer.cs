@@ -32,6 +32,8 @@
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+			this.textID = new DevExpress.XtraEditors.TextEdit();
+			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
 			this.BtnListele = new DevExpress.XtraEditors.SimpleButton();
 			this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
 			this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -48,19 +50,17 @@
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.textUrunAd = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-			this.textID = new DevExpress.XtraEditors.TextEdit();
-			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
 			this.groupControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textStok.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textSatisFiyat.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textAlisFiyat.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textMarkaAd.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// gridControl1
@@ -110,6 +110,22 @@
 			this.groupControl1.Size = new System.Drawing.Size(886, 761);
 			this.groupControl1.TabIndex = 1;
 			this.groupControl1.Text = "Ürün İşlemleri";
+			// 
+			// textID
+			// 
+			this.textID.Enabled = false;
+			this.textID.Location = new System.Drawing.Point(112, 59);
+			this.textID.Name = "textID";
+			this.textID.Size = new System.Drawing.Size(336, 20);
+			this.textID.TabIndex = 20;
+			// 
+			// labelControl7
+			// 
+			this.labelControl7.Location = new System.Drawing.Point(91, 62);
+			this.labelControl7.Name = "labelControl7";
+			this.labelControl7.Size = new System.Drawing.Size(15, 13);
+			this.labelControl7.TabIndex = 19;
+			this.labelControl7.Text = "ID:";
 			// 
 			// BtnListele
 			// 
@@ -245,22 +261,6 @@
 			this.labelControl1.TabIndex = 3;
 			this.labelControl1.Text = "Ürün Adı:";
 			// 
-			// textID
-			// 
-			this.textID.Enabled = false;
-			this.textID.Location = new System.Drawing.Point(112, 59);
-			this.textID.Name = "textID";
-			this.textID.Size = new System.Drawing.Size(336, 20);
-			this.textID.TabIndex = 20;
-			// 
-			// labelControl7
-			// 
-			this.labelControl7.Location = new System.Drawing.Point(91, 62);
-			this.labelControl7.Name = "labelControl7";
-			this.labelControl7.Size = new System.Drawing.Size(15, 13);
-			this.labelControl7.TabIndex = 19;
-			this.labelControl7.Text = "ID:";
-			// 
 			// FrmUrunListesi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,13 +276,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
 			this.groupControl1.ResumeLayout(false);
 			this.groupControl1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textStok.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textSatisFiyat.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textAlisFiyat.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textMarkaAd.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textUrunAd.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}

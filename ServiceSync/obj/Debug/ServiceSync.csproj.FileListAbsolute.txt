@@ -48,3 +48,5 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.exe
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.pdb
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmUrunListesi.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniUrun.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmKategori.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniKategori.resources
