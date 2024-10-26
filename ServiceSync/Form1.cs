@@ -52,5 +52,12 @@ namespace ServiceSync
 			Forms.FrmYeniKategori fr = new Forms.FrmYeniKategori();
 			fr.Show();
 		}
+
+		private void Btnistatistik_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.Frmİstatistik fr = new Forms.Frmİstatistik();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }

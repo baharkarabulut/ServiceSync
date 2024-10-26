@@ -36,7 +36,7 @@
 			this.BtnProductListForm = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnYeniUrun = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+			this.Btnistatistik = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
@@ -109,7 +109,7 @@
             this.BtnProductListForm,
             this.BtnYeniUrun,
             this.barButtonItem5,
-            this.barButtonItem6,
+            this.Btnistatistik,
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
@@ -198,12 +198,13 @@
 			this.barButtonItem5.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.LargeImage")));
 			this.barButtonItem5.Name = "barButtonItem5";
 			// 
-			// barButtonItem6
+			// Btnistatistik
 			// 
-			this.barButtonItem6.Caption = "Ürün İstatistikleri";
-			this.barButtonItem6.Id = 6;
-			this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-			this.barButtonItem6.Name = "barButtonItem6";
+			this.Btnistatistik.Caption = "Ürün İstatistikleri";
+			this.Btnistatistik.Id = 6;
+			this.Btnistatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+			this.Btnistatistik.Name = "Btnistatistik";
+			this.Btnistatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btnistatistik_ItemClick);
 			// 
 			// barButtonItem7
 			// 
@@ -476,7 +477,7 @@
 			// 
 			// ribbonPageGroup11
 			// 
-			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem6);
+			this.ribbonPageGroup11.ItemLinks.Add(this.Btnistatistik);
 			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem7);
 			this.ribbonPageGroup11.Name = "ribbonPageGroup11";
 			this.ribbonPageGroup11.Text = "ribbonPageGroup11";
@@ -655,7 +656,7 @@
 		private DevExpress.XtraBars.BarButtonItem BtnProductListForm;
 		private DevExpress.XtraBars.BarButtonItem BtnYeniUrun;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+		private DevExpress.XtraBars.BarButtonItem Btnistatistik;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem7;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem8;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem9;
