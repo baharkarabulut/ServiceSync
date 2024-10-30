@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frm\u0130statistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\forms\\frmyenikategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmyenikategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -19,12 +23,8 @@
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmurunlistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmyenikategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmyenikategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\forms\\frmyenikategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -58,12 +58,19 @@
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T12:14:15.462Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -71,8 +78,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAmwDoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T15:53:21.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T15:53:21.175Z"
             },
             {
               "$type": "Document",
@@ -87,16 +93,8 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "FrmYeniKategori.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniKategori.cs",
               "RelativeDocumentMoniker": "Forms\\FrmYeniKategori.cs",
@@ -127,11 +125,12 @@
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniKategori.cs [Design]",
               "RelativeToolTip": "Forms\\FrmYeniKategori.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T15:35:23.873Z"
+              "WhenOpened": "2024-10-25T15:35:23.873Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FrmUrunListesi.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs",
               "RelativeDocumentMoniker": "Forms\\FrmUrunListesi.cs",
@@ -139,8 +138,7 @@
               "RelativeToolTip": "Forms\\FrmUrunListesi.cs",
               "ViewState": "AgIAAEEAAAAAAAAAAAAIwF8AAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T14:59:56.735Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T14:59:56.735Z"
             },
             {
               "$type": "Document",
@@ -156,15 +154,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FrmUrunListesi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs",
               "RelativeDocumentMoniker": "Forms\\FrmUrunListesi.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs [Design]",
               "RelativeToolTip": "Forms\\FrmUrunListesi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T12:47:54.527Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T12:47:54.527Z"
             }
           ]
         }

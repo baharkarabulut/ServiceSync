@@ -50,3 +50,4 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniUrun.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmKategori.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniKategori.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.Frmİstatistik.resources
