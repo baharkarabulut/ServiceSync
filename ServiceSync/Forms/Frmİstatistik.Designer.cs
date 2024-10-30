@@ -31,6 +31,7 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frmİstatistik));
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
@@ -85,7 +86,6 @@
 			this.pictureEdit10 = new DevExpress.XtraEditors.PictureEdit();
 			this.labelControl39 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl40 = new DevExpress.XtraEditors.LabelControl();
-			this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel11 = new System.Windows.Forms.Panel();
 			this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
@@ -102,6 +102,7 @@
 			this.labelControl29 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl30 = new DevExpress.XtraEditors.LabelControl();
 			this.panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
 			this.panel2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
@@ -126,7 +127,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit9.Properties)).BeginInit();
 			this.panel20.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
 			this.panel11.SuspendLayout();
 			this.panel12.SuspendLayout();
 			this.panel13.SuspendLayout();
@@ -145,6 +145,18 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(296, 146);
 			this.panel1.TabIndex = 0;
+			// 
+			// pictureEdit1
+			// 
+			this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
+			this.pictureEdit1.Location = new System.Drawing.Point(158, 48);
+			this.pictureEdit1.Name = "pictureEdit1";
+			this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(206)))), ((int)(((byte)(180)))));
+			this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
+			this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+			this.pictureEdit1.Properties.ZoomPercent = 180D;
+			this.pictureEdit1.Size = new System.Drawing.Size(135, 98);
+			this.pictureEdit1.TabIndex = 2;
 			// 
 			// labelControl2
 			// 
@@ -807,18 +819,6 @@
 			this.labelControl40.TabIndex = 0;
 			this.labelControl40.Text = "Toplam Marka Sayısı";
 			// 
-			// pictureEdit1
-			// 
-			this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
-			this.pictureEdit1.Location = new System.Drawing.Point(158, 48);
-			this.pictureEdit1.Name = "pictureEdit1";
-			this.pictureEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(206)))), ((int)(((byte)(180)))));
-			this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
-			this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-			this.pictureEdit1.Properties.ZoomPercent = 180D;
-			this.pictureEdit1.Size = new System.Drawing.Size(135, 98);
-			this.pictureEdit1.TabIndex = 2;
-			// 
 			// panel11
 			// 
 			this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(141)))), ((int)(((byte)(105)))));
@@ -1034,8 +1034,10 @@
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "Frmİstatistik";
 			this.Text = "Frmİstatistik";
+			this.Load += new System.EventHandler(this.Frmİstatistik_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
@@ -1074,7 +1076,6 @@
 			this.panel20.ResumeLayout(false);
 			this.panel20.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit10.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
 			this.panel11.ResumeLayout(false);
 			this.panel11.PerformLayout();
 			this.panel12.ResumeLayout(false);
