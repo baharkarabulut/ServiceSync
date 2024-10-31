@@ -37,7 +37,7 @@
 			this.BtnYeniUrun = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
 			this.Btnistatistik = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnMarkaist = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
@@ -110,7 +110,7 @@
             this.BtnYeniUrun,
             this.barButtonItem5,
             this.Btnistatistik,
-            this.barButtonItem7,
+            this.BtnMarkaist,
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10,
@@ -202,16 +202,17 @@
 			// 
 			this.Btnistatistik.Caption = "Ürün İstatistikleri";
 			this.Btnistatistik.Id = 6;
-			this.Btnistatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
+			this.Btnistatistik.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Btnistatistik.ImageOptions.LargeImage")));
 			this.Btnistatistik.Name = "Btnistatistik";
 			this.Btnistatistik.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btnistatistik_ItemClick);
 			// 
-			// barButtonItem7
+			// BtnMarkaist
 			// 
-			this.barButtonItem7.Caption = "Marka İstatistikleri";
-			this.barButtonItem7.Id = 7;
-			this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-			this.barButtonItem7.Name = "barButtonItem7";
+			this.BtnMarkaist.Caption = "Marka İstatistikleri";
+			this.BtnMarkaist.Id = 7;
+			this.BtnMarkaist.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
+			this.BtnMarkaist.Name = "BtnMarkaist";
+			this.BtnMarkaist.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMarkaist_ItemClick);
 			// 
 			// barButtonItem8
 			// 
@@ -478,7 +479,7 @@
 			// ribbonPageGroup11
 			// 
 			this.ribbonPageGroup11.ItemLinks.Add(this.Btnistatistik);
-			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem7);
+			this.ribbonPageGroup11.ItemLinks.Add(this.BtnMarkaist);
 			this.ribbonPageGroup11.Name = "ribbonPageGroup11";
 			this.ribbonPageGroup11.Text = "ribbonPageGroup11";
 			// 
@@ -657,7 +658,7 @@
 		private DevExpress.XtraBars.BarButtonItem BtnYeniUrun;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
 		private DevExpress.XtraBars.BarButtonItem Btnistatistik;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem7;
+		private DevExpress.XtraBars.BarButtonItem BtnMarkaist;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem8;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem9;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem10;

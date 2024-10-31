@@ -59,5 +59,12 @@ namespace ServiceSync
 			fr.MdiParent = this;
 			fr.Show();
 		}
+
+		private void BtnMarkaist_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmMarkalar fr = new Forms.FrmMarkalar();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }

@@ -41,5 +41,10 @@ namespace ServiceSync.Forms
 			labelControl39.Text = ( from x in db.TblURUN
 									select x.MARKA).Distinct().Count().ToString();
 		}
+
+		private void labelControl2_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

@@ -170,6 +170,7 @@
 			this.labelControl2.Size = new System.Drawing.Size(63, 50);
 			this.labelControl2.TabIndex = 1;
 			this.labelControl2.Text = "584";
+			this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
 			// 
 			// labelControl1
 			// 
