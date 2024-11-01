@@ -16,10 +16,11 @@ namespace ServiceSync.Forms
 		{
 			InitializeComponent();
 		}
+		DbServicesEntities db = new DbServicesEntities();
 
-		private void lookUpEdit1_EditValueChanged(object sender, EventArgs e)
+		private void FrmCariListesi_Load(object sender, EventArgs e)
 		{
-
+			gridControl1.DataSource = db.TblCARI.ToList();
 		}
 	}
 }
