@@ -73,5 +73,12 @@ namespace ServiceSync
 			fr.MdiParent = this;
 			fr.Show();
 		}
+
+		private void BtnCariiller_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmCariiller fr = new Forms.FrmCariiller();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }

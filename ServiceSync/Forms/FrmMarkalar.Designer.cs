@@ -365,7 +365,7 @@
 			series1.View = pieSeriesView1;
 			this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-			this.chartControl1.Size = new System.Drawing.Size(474, 420);
+			this.chartControl1.Size = new System.Drawing.Size(474, 369);
 			this.chartControl1.TabIndex = 0;
 			// 
 			// panelControl2
@@ -376,7 +376,7 @@
 			this.panelControl2.Controls.Add(this.labelControl12);
 			this.panelControl2.Location = new System.Drawing.Point(1031, 166);
 			this.panelControl2.Name = "panelControl2";
-			this.panelControl2.Size = new System.Drawing.Size(486, 407);
+			this.panelControl2.Size = new System.Drawing.Size(486, 356);
 			this.panelControl2.TabIndex = 9;
 			// 
 			// chartControl2
@@ -392,7 +392,7 @@
 			series2.SeriesID = 4;
 			this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series2};
-			this.chartControl2.Size = new System.Drawing.Size(472, 316);
+			this.chartControl2.Size = new System.Drawing.Size(472, 258);
 			this.chartControl2.TabIndex = 8;
 			// 
 			// pictureEdit4
@@ -436,9 +436,9 @@
 			this.panelControl3.Controls.Add(this.panel7);
 			this.panelControl3.Controls.Add(this.panel6);
 			this.panelControl3.Controls.Add(this.panel5);
-			this.panelControl3.Location = new System.Drawing.Point(1031, 579);
+			this.panelControl3.Location = new System.Drawing.Point(1031, 528);
 			this.panelControl3.Name = "panelControl3";
-			this.panelControl3.Size = new System.Drawing.Size(486, 98);
+			this.panelControl3.Size = new System.Drawing.Size(486, 149);
 			this.panelControl3.TabIndex = 10;
 			// 
 			// panel10

@@ -77,6 +77,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmCariiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCariiller.Designer.cs">
+      <DependentUpon>FrmCariiller.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmCariListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +192,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCariiller.resx">
+      <DependentUpon>FrmCariiller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmCariListesi.resx">
       <DependentUpon>FrmCariListesi.cs</DependentUpon>

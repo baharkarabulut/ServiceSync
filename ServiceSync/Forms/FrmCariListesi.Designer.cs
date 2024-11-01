@@ -77,10 +77,10 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(2, 193);
+			this.gridControl1.Location = new System.Drawing.Point(2, 1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(834, 431);
+			this.gridControl1.Size = new System.Drawing.Size(1043, 623);
 			this.gridControl1.TabIndex = 1;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -125,9 +125,9 @@
 			this.groupControl1.Controls.Add(this.labelControl2);
 			this.groupControl1.Controls.Add(this.textUrunAd);
 			this.groupControl1.Controls.Add(this.labelControl1);
-			this.groupControl1.Location = new System.Drawing.Point(842, 1);
+			this.groupControl1.Location = new System.Drawing.Point(1051, 1);
 			this.groupControl1.Name = "groupControl1";
-			this.groupControl1.Size = new System.Drawing.Size(550, 623);
+			this.groupControl1.Size = new System.Drawing.Size(487, 623);
 			this.groupControl1.TabIndex = 2;
 			this.groupControl1.Text = "Cari İşlemleri";
 			// 
