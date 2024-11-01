@@ -75,3 +75,4 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.XtraVe
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.DataAccess.v24.1.xml
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.XtraNavBar.v24.1.xml
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.Xpo.v24.1.xml
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariListesi.resources
