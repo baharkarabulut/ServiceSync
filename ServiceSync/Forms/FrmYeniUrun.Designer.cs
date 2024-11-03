@@ -50,7 +50,6 @@
 			this.pictureEdit7 = new DevExpress.XtraEditors.PictureEdit();
 			this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
 			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
-			this.BtnVazgec = new DevExpress.XtraEditors.SimpleButton();
 			this.txtUrunAd = new System.Windows.Forms.TextBox();
 			this.txtMarkaAd = new System.Windows.Forms.TextBox();
 			this.txtKategori = new System.Windows.Forms.TextBox();
@@ -314,23 +313,12 @@
 			// 
 			this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnKaydet.Appearance.Options.UseFont = true;
-			this.BtnKaydet.Location = new System.Drawing.Point(52, 442);
+			this.BtnKaydet.Location = new System.Drawing.Point(146, 439);
 			this.BtnKaydet.Name = "BtnKaydet";
 			this.BtnKaydet.Size = new System.Drawing.Size(201, 46);
 			this.BtnKaydet.TabIndex = 20;
 			this.BtnKaydet.Text = "KAYDET";
 			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
-			// 
-			// BtnVazgec
-			// 
-			this.BtnVazgec.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BtnVazgec.Appearance.Options.UseFont = true;
-			this.BtnVazgec.Location = new System.Drawing.Point(259, 442);
-			this.BtnVazgec.Name = "BtnVazgec";
-			this.BtnVazgec.Size = new System.Drawing.Size(201, 46);
-			this.BtnVazgec.TabIndex = 21;
-			this.BtnVazgec.Text = "VAZGEÇ";
-			this.BtnVazgec.Click += new System.EventHandler(this.BtnVazgec_Click);
 			// 
 			// txtUrunAd
 			// 
@@ -399,7 +387,6 @@
 			this.Controls.Add(this.txtKategori);
 			this.Controls.Add(this.txtMarkaAd);
 			this.Controls.Add(this.txtUrunAd);
-			this.Controls.Add(this.BtnVazgec);
 			this.Controls.Add(this.BtnKaydet);
 			this.Controls.Add(this.textEdit7);
 			this.Controls.Add(this.pictureEdit7);
@@ -467,7 +454,6 @@
 		private DevExpress.XtraEditors.PictureEdit pictureEdit7;
 		private DevExpress.XtraEditors.TextEdit textEdit7;
 		private DevExpress.XtraEditors.SimpleButton BtnKaydet;
-		private DevExpress.XtraEditors.SimpleButton BtnVazgec;
 		private System.Windows.Forms.TextBox txtUrunAd;
 		private System.Windows.Forms.TextBox txtMarkaAd;
 		private System.Windows.Forms.TextBox txtKategori;
