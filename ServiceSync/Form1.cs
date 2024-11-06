@@ -80,5 +80,11 @@ namespace ServiceSync
 			fr.MdiParent = this;
 			fr.Show();
 		}
+
+		private void BtnYeniCari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmCariEkle fr = new Forms.FrmCariEkle();
+			fr.Show();
+		}
 	}
 }

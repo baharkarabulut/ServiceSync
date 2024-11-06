@@ -77,3 +77,4 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.XtraNa
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\bin\Debug\DevExpress.Xpo.v24.1.xml
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariListesi.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariiller.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariEkle.resources

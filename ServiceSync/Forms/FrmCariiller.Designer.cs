@@ -47,7 +47,7 @@
 			this.gridControl1.Location = new System.Drawing.Point(2, 2);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(754, 618);
+			this.gridControl1.Size = new System.Drawing.Size(616, 618);
 			this.gridControl1.TabIndex = 2;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -70,7 +70,7 @@
     "69710163397156;-0.635842281871727;0;0.493020726637447;0.5755123734246;0.65246921" +
     "0875939;0;0;0;0;1";
 			this.chartControl1.Diagram = simpleDiagram3D1;
-			this.chartControl1.Location = new System.Drawing.Point(762, 2);
+			this.chartControl1.Location = new System.Drawing.Point(624, 2);
 			this.chartControl1.Name = "chartControl1";
 			series1.LegendTextPattern = "{A}";
 			series1.Name = "Series 1";
@@ -78,7 +78,7 @@
 			series1.View = pie3DSeriesView1;
 			this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-			this.chartControl1.Size = new System.Drawing.Size(775, 396);
+			this.chartControl1.Size = new System.Drawing.Size(913, 618);
 			this.chartControl1.TabIndex = 3;
 			// 
 			// FrmCariiller
