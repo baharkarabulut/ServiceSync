@@ -86,5 +86,12 @@ namespace ServiceSync
 			Forms.FrmCariEkle fr = new Forms.FrmCariEkle();
 			fr.Show();
 		}
+
+		private void BtnDepartmanListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmDepartman fr = new Forms.FrmDepartman();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }
