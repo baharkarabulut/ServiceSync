@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,8 +24,7 @@ namespace ServiceSync.Forms
 						  select new
 						  {
 							  u.ID,
-							  u.AD,
-							  u.ACIKLAMA
+							  u.AD
 						  };
 			gridControl1.DataSource = departman.ToList();
 			labelControl18.Text = db.TblDEPARTMAN.Count().ToString();
@@ -35,10 +35,9 @@ namespace ServiceSync.Forms
 		{
 			TblDEPARTMAN t = new TblDEPARTMAN();
 
-			if (textDepartmanAd.Text.Length <= 50 && textDepartmanAd.Text != "" && TextBoxDepartmanAciklama.Text.Length >= 1)
+			if (textDepartmanAd.Text.Length <= 50 && textDepartmanAd.Text != "")
 			{
 				t.AD = textDepartmanAd.Text;
-				t.ACIKLAMA = TextBoxDepartmanAciklama.Text;
 				db.TblDEPARTMAN.Add(t);
 				db.SaveChanges();
 				MessageBox.Show("Departman kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -47,6 +46,41 @@ namespace ServiceSync.Forms
 			{
 				MessageBox.Show("Kayıt yapılamadı", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(textID.Text);
+			var departman = db.TblDEPARTMAN.Find(id);
+			db.TblDEPARTMAN.Remove(departman);
+			db.SaveChanges();
+			MessageBox.Show("Departman başarıyla silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(textID.Text);
+			var departman = db.TblDEPARTMAN.Find(id);
+			departman.AD = textDepartmanAd.Text;
+			db.SaveChanges();
+			MessageBox.Show("Departman başarıyla güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+		}
+
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			var departman = from u in db.TblDEPARTMAN
+							select new
+							{
+								u.ID,
+								u.AD
+							};
+			gridControl1.DataSource = departman.ToList();
+		}
+
+		private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+		{
+			textID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+			textDepartmanAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
 		}
 	}
 }

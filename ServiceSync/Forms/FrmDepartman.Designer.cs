@@ -51,13 +51,11 @@
 			this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.textDepartmanAd = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-			this.TextBoxDepartmanAciklama = new System.Windows.Forms.RichTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureEdit3.Properties)).BeginInit();
 			this.panel3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).BeginInit();
@@ -141,14 +139,14 @@
 			// textID
 			// 
 			this.textID.Enabled = false;
-			this.textID.Location = new System.Drawing.Point(118, 72);
+			this.textID.Location = new System.Drawing.Point(118, 131);
 			this.textID.Name = "textID";
 			this.textID.Size = new System.Drawing.Size(292, 20);
 			this.textID.TabIndex = 20;
 			// 
 			// labelControl7
 			// 
-			this.labelControl7.Location = new System.Drawing.Point(41, 75);
+			this.labelControl7.Location = new System.Drawing.Point(41, 134);
 			this.labelControl7.Name = "labelControl7";
 			this.labelControl7.Size = new System.Drawing.Size(71, 13);
 			this.labelControl7.TabIndex = 19;
@@ -196,34 +194,37 @@
 			// BtnListele
 			// 
 			this.BtnListele.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnListele.ImageOptions.Image")));
-			this.BtnListele.Location = new System.Drawing.Point(118, 391);
+			this.BtnListele.Location = new System.Drawing.Point(118, 334);
 			this.BtnListele.Name = "BtnListele";
 			this.BtnListele.Size = new System.Drawing.Size(292, 40);
 			this.BtnListele.TabIndex = 18;
 			this.BtnListele.Text = "LİSTELE";
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// BtnGuncelle
 			// 
 			this.BtnGuncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGuncelle.ImageOptions.Image")));
-			this.BtnGuncelle.Location = new System.Drawing.Point(118, 345);
+			this.BtnGuncelle.Location = new System.Drawing.Point(118, 288);
 			this.BtnGuncelle.Name = "BtnGuncelle";
 			this.BtnGuncelle.Size = new System.Drawing.Size(292, 40);
 			this.BtnGuncelle.TabIndex = 17;
 			this.BtnGuncelle.Text = "GÜNCELLE";
+			this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
 			// 
 			// BtnSil
 			// 
 			this.BtnSil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnSil.ImageOptions.Image")));
-			this.BtnSil.Location = new System.Drawing.Point(118, 299);
+			this.BtnSil.Location = new System.Drawing.Point(118, 242);
 			this.BtnSil.Name = "BtnSil";
 			this.BtnSil.Size = new System.Drawing.Size(292, 40);
 			this.BtnSil.TabIndex = 16;
 			this.BtnSil.Text = "SİL";
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
 			// BtnKaydet
 			// 
 			this.BtnKaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnKaydet.ImageOptions.Image")));
-			this.BtnKaydet.Location = new System.Drawing.Point(118, 253);
+			this.BtnKaydet.Location = new System.Drawing.Point(118, 196);
 			this.BtnKaydet.Name = "BtnKaydet";
 			this.BtnKaydet.Size = new System.Drawing.Size(292, 40);
 			this.BtnKaydet.TabIndex = 15;
@@ -331,24 +332,16 @@
 			this.labelControl18.TabIndex = 1;
 			this.labelControl18.Text = "584";
 			// 
-			// labelControl2
-			// 
-			this.labelControl2.Location = new System.Drawing.Point(67, 127);
-			this.labelControl2.Name = "labelControl2";
-			this.labelControl2.Size = new System.Drawing.Size(45, 13);
-			this.labelControl2.TabIndex = 5;
-			this.labelControl2.Text = "Açıklama:";
-			// 
 			// textDepartmanAd
 			// 
-			this.textDepartmanAd.Location = new System.Drawing.Point(118, 98);
+			this.textDepartmanAd.Location = new System.Drawing.Point(118, 157);
 			this.textDepartmanAd.Name = "textDepartmanAd";
 			this.textDepartmanAd.Size = new System.Drawing.Size(292, 20);
 			this.textDepartmanAd.TabIndex = 4;
 			// 
 			// labelControl1
 			// 
-			this.labelControl1.Location = new System.Drawing.Point(37, 101);
+			this.labelControl1.Location = new System.Drawing.Point(37, 160);
 			this.labelControl1.Name = "labelControl1";
 			this.labelControl1.Size = new System.Drawing.Size(75, 13);
 			this.labelControl1.TabIndex = 3;
@@ -356,14 +349,12 @@
 			// 
 			// groupControl1
 			// 
-			this.groupControl1.Controls.Add(this.TextBoxDepartmanAciklama);
 			this.groupControl1.Controls.Add(this.textID);
 			this.groupControl1.Controls.Add(this.labelControl7);
 			this.groupControl1.Controls.Add(this.BtnListele);
 			this.groupControl1.Controls.Add(this.BtnGuncelle);
 			this.groupControl1.Controls.Add(this.BtnSil);
 			this.groupControl1.Controls.Add(this.BtnKaydet);
-			this.groupControl1.Controls.Add(this.labelControl2);
 			this.groupControl1.Controls.Add(this.textDepartmanAd);
 			this.groupControl1.Controls.Add(this.labelControl1);
 			this.groupControl1.Location = new System.Drawing.Point(1071, 3);
@@ -383,6 +374,7 @@
 			this.gridView1.GridControl = this.gridControl1;
 			this.gridView1.Name = "gridView1";
 			this.gridView1.OptionsView.ShowGroupPanel = false;
+			this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
 			// 
 			// gridControl1
 			// 
@@ -393,14 +385,6 @@
 			this.gridControl1.TabIndex = 9;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
-			// 
-			// TextBoxDepartmanAciklama
-			// 
-			this.TextBoxDepartmanAciklama.Location = new System.Drawing.Point(118, 127);
-			this.TextBoxDepartmanAciklama.Name = "TextBoxDepartmanAciklama";
-			this.TextBoxDepartmanAciklama.Size = new System.Drawing.Size(292, 112);
-			this.TextBoxDepartmanAciklama.TabIndex = 21;
-			this.TextBoxDepartmanAciklama.Text = "";
 			// 
 			// FrmDepartman
 			// 
@@ -463,11 +447,9 @@
 		private DevExpress.XtraEditors.PictureEdit pictureEdit1;
 		private System.Windows.Forms.Panel panel1;
 		private DevExpress.XtraEditors.LabelControl labelControl18;
-		private DevExpress.XtraEditors.LabelControl labelControl2;
 		private DevExpress.XtraEditors.TextEdit textDepartmanAd;
 		private DevExpress.XtraEditors.LabelControl labelControl1;
 		private DevExpress.XtraEditors.GroupControl groupControl1;
-		private System.Windows.Forms.RichTextBox TextBoxDepartmanAciklama;
 		private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
 		private DevExpress.XtraGrid.GridControl gridControl1;
 	}
