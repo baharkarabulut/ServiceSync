@@ -93,5 +93,11 @@ namespace ServiceSync
 			fr.MdiParent = this;
 			fr.Show();
 		}
+
+		private void BtnYeniDepartman_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmYeniDepartman fr = new Forms.FrmYeniDepartman();
+			fr.Show();
+		}
 	}
 }

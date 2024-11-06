@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmyenidepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmyenidepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmyenidepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmyenidepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmdepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmdepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\forms\\frmdepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmdepartman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmurunlistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmurunlistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|c:\\users\\bahars\\source\\repos\\servicesync\\servicesync\\forms\\frmurunlistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:forms\\frmurunlistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D27B846-A516-4A67-B0C4-6175023175A7}|ServiceSync.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs [Design]*",
+              "RelativeToolTip": "Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T12:14:15.462Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmYeniDepartman.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniDepartman.cs",
+              "RelativeDocumentMoniker": "Forms\\FrmYeniDepartman.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniDepartman.cs",
+              "RelativeToolTip": "Forms\\FrmYeniDepartman.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:30:28.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwGIAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:21:06.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmYeniDepartman.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniDepartman.cs",
+              "RelativeDocumentMoniker": "Forms\\FrmYeniDepartman.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmYeniDepartman.cs [Design]",
+              "RelativeToolTip": "Forms\\FrmYeniDepartman.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:20:37.606Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -54,45 +97,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmUrunListesi.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs",
-              "RelativeDocumentMoniker": "Forms\\FrmUrunListesi.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs",
-              "RelativeToolTip": "Forms\\FrmUrunListesi.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEMAAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:05:15.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmUrunListesi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs",
-              "RelativeDocumentMoniker": "Forms\\FrmUrunListesi.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmUrunListesi.cs [Design]",
-              "RelativeToolTip": "Forms\\FrmUrunListesi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T15:05:13.837Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "FrmDepartman.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmDepartman.cs",
               "RelativeDocumentMoniker": "Forms\\FrmDepartman.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmDepartman.cs",
               "RelativeToolTip": "Forms\\FrmDepartman.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAwCcAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA0wC8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T14:43:43.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "FrmDepartman.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ServiceSync\\ServiceSync\\Forms\\FrmDepartman.cs",
               "RelativeDocumentMoniker": "Forms\\FrmDepartman.cs",

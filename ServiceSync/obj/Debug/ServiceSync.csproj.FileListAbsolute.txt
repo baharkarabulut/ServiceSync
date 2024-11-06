@@ -79,3 +79,4 @@ C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariiller.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmCariEkle.resources
 C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmDepartman.resources
+C:\Users\BAHARS\source\repos\ServiceSync\ServiceSync\obj\Debug\ServiceSync.Forms.FrmYeniDepartman.resources
