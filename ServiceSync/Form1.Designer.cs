@@ -326,14 +326,15 @@
 			// 
 			this.BtnPersonelListesi.Caption = "Personel Listesi";
 			this.BtnPersonelListesi.Id = 23;
-			this.BtnPersonelListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem22.ImageOptions.LargeImage")));
+			this.BtnPersonelListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnPersonelListesi.ImageOptions.LargeImage")));
 			this.BtnPersonelListesi.Name = "BtnPersonelListesi";
+			this.BtnPersonelListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnPersonelListesi_ItemClick);
 			// 
 			// BtnYeniPersonel
 			// 
 			this.BtnYeniPersonel.Caption = "Yeni Personel";
 			this.BtnYeniPersonel.Id = 24;
-			this.BtnYeniPersonel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem23.ImageOptions.LargeImage")));
+			this.BtnYeniPersonel.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYeniPersonel.ImageOptions.LargeImage")));
 			this.BtnYeniPersonel.Name = "BtnYeniPersonel";
 			// 
 			// BtnDepartmanListesi

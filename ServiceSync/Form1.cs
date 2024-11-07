@@ -99,5 +99,12 @@ namespace ServiceSync
 			Forms.FrmYeniDepartman fr = new Forms.FrmYeniDepartman();
 			fr.Show();
 		}
+
+		private void BtnPersonelListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			Forms.FrmPersonel fr = new Forms.FrmPersonel();
+			fr.MdiParent = this;
+			fr.Show();
+		}
 	}
 }

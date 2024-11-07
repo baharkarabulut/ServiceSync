@@ -104,7 +104,7 @@
 			this.panel3.Controls.Add(this.pictureEdit3);
 			this.panel3.Controls.Add(this.labelControl14);
 			this.panel3.Controls.Add(this.labelControl15);
-			this.panel3.Location = new System.Drawing.Point(548, 10);
+			this.panel3.Location = new System.Drawing.Point(539, 10);
 			this.panel3.Margin = new System.Windows.Forms.Padding(4);
 			this.panel3.Name = "panel3";
 			this.panel3.Size = new System.Drawing.Size(255, 146);
@@ -237,7 +237,7 @@
 			this.panel4.Controls.Add(this.pictureEdit4);
 			this.panel4.Controls.Add(this.labelControl16);
 			this.panel4.Controls.Add(this.labelControl17);
-			this.panel4.Location = new System.Drawing.Point(811, 10);
+			this.panel4.Location = new System.Drawing.Point(802, 10);
 			this.panel4.Margin = new System.Windows.Forms.Padding(4);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(255, 146);
@@ -288,7 +288,7 @@
 			this.panel2.Controls.Add(this.pictureEdit2);
 			this.panel2.Controls.Add(this.labelControl12);
 			this.panel2.Controls.Add(this.labelControl13);
-			this.panel2.Location = new System.Drawing.Point(285, 10);
+			this.panel2.Location = new System.Drawing.Point(276, 10);
 			this.panel2.Margin = new System.Windows.Forms.Padding(4);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(255, 146);
@@ -313,7 +313,7 @@
 			this.panel1.Controls.Add(this.pictureEdit1);
 			this.panel1.Controls.Add(this.labelControl18);
 			this.panel1.Controls.Add(this.labelControl19);
-			this.panel1.Location = new System.Drawing.Point(22, 10);
+			this.panel1.Location = new System.Drawing.Point(13, 10);
 			this.panel1.Margin = new System.Windows.Forms.Padding(4);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(255, 146);
@@ -357,7 +357,7 @@
 			this.groupControl1.Controls.Add(this.BtnKaydet);
 			this.groupControl1.Controls.Add(this.textDepartmanAd);
 			this.groupControl1.Controls.Add(this.labelControl1);
-			this.groupControl1.Location = new System.Drawing.Point(1071, 3);
+			this.groupControl1.Location = new System.Drawing.Point(1062, 3);
 			this.groupControl1.Name = "groupControl1";
 			this.groupControl1.Size = new System.Drawing.Size(487, 623);
 			this.groupControl1.TabIndex = 10;
@@ -378,7 +378,7 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(22, 163);
+			this.gridControl1.Location = new System.Drawing.Point(13, 163);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
 			this.gridControl1.Size = new System.Drawing.Size(1043, 463);
