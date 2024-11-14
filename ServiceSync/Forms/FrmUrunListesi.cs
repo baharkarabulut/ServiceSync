@@ -95,5 +95,10 @@ namespace ServiceSync.Forms
 			db.SaveChanges();
 			MessageBox.Show("Ürün başarıyla güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 		}
+
+		private void groupControl1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
 	}
 }

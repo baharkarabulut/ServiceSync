@@ -31,6 +31,10 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonel));
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit17 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
@@ -38,14 +42,14 @@
 			this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
 			this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
-			this.textEdit16 = new DevExpress.XtraEditors.TextEdit();
+			this.textPersonelSoyad = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-			this.textEdit15 = new DevExpress.XtraEditors.TextEdit();
+			this.textPersonelFotograf = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-			this.textEdit14 = new DevExpress.XtraEditors.TextEdit();
+			this.textPersonelTelefon = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-			this.textEdit13 = new DevExpress.XtraEditors.TextEdit();
+			this.textPersonelMail = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
 			this.textID = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -53,45 +57,41 @@
 			this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
 			this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
 			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
-			this.textDepartmanAd = new DevExpress.XtraEditors.TextEdit();
+			this.textPersonelAd = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit18 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel3 = new System.Windows.Forms.Panel();
+			this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit19 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit3 = new DevExpress.XtraEditors.PictureEdit();
 			this.panel4 = new System.Windows.Forms.Panel();
+			this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
 			this.textEdit20 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
 			this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
 			this.pictureEdit4 = new DevExpress.XtraEditors.PictureEdit();
-			this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl18 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl19 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-			this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit17.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -101,12 +101,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
 			this.groupControl1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelSoyad.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelFotograf.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelTelefon.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelMail.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.textDepartmanAd.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelAd.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
@@ -147,6 +147,46 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(236, 242);
 			this.panel1.TabIndex = 17;
+			// 
+			// labelControl11
+			// 
+			this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl11.Appearance.Options.UseFont = true;
+			this.labelControl11.Location = new System.Drawing.Point(51, 218);
+			this.labelControl11.Name = "labelControl11";
+			this.labelControl11.Size = new System.Drawing.Size(25, 16);
+			this.labelControl11.TabIndex = 63;
+			this.labelControl11.Text = "mail";
+			// 
+			// labelControl10
+			// 
+			this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl10.Appearance.Options.UseFont = true;
+			this.labelControl10.Location = new System.Drawing.Point(84, 193);
+			this.labelControl10.Name = "labelControl10";
+			this.labelControl10.Size = new System.Drawing.Size(71, 16);
+			this.labelControl10.TabIndex = 62;
+			this.labelControl10.Text = "departman";
+			// 
+			// labelControl9
+			// 
+			this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl9.Appearance.Options.UseFont = true;
+			this.labelControl9.Location = new System.Drawing.Point(60, 170);
+			this.labelControl9.Name = "labelControl9";
+			this.labelControl9.Size = new System.Drawing.Size(39, 16);
+			this.labelControl9.TabIndex = 61;
+			this.labelControl9.Text = "soyad";
+			// 
+			// labelControl8
+			// 
+			this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl8.Appearance.Options.UseFont = true;
+			this.labelControl8.Location = new System.Drawing.Point(41, 147);
+			this.labelControl8.Name = "labelControl8";
+			this.labelControl8.Size = new System.Drawing.Size(16, 16);
+			this.labelControl8.TabIndex = 60;
+			this.labelControl8.Text = "ad";
 			// 
 			// textEdit17
 			// 
@@ -226,14 +266,14 @@
 			// groupControl1
 			// 
 			this.groupControl1.Controls.Add(this.lookUpEdit1);
-			this.groupControl1.Controls.Add(this.textEdit16);
+			this.groupControl1.Controls.Add(this.textPersonelSoyad);
 			this.groupControl1.Controls.Add(this.labelControl6);
-			this.groupControl1.Controls.Add(this.textEdit15);
+			this.groupControl1.Controls.Add(this.textPersonelFotograf);
 			this.groupControl1.Controls.Add(this.labelControl5);
-			this.groupControl1.Controls.Add(this.textEdit14);
+			this.groupControl1.Controls.Add(this.textPersonelTelefon);
 			this.groupControl1.Controls.Add(this.labelControl4);
 			this.groupControl1.Controls.Add(this.labelControl2);
-			this.groupControl1.Controls.Add(this.textEdit13);
+			this.groupControl1.Controls.Add(this.textPersonelMail);
 			this.groupControl1.Controls.Add(this.labelControl3);
 			this.groupControl1.Controls.Add(this.textID);
 			this.groupControl1.Controls.Add(this.labelControl7);
@@ -241,7 +281,7 @@
 			this.groupControl1.Controls.Add(this.BtnGuncelle);
 			this.groupControl1.Controls.Add(this.BtnSil);
 			this.groupControl1.Controls.Add(this.BtnKaydet);
-			this.groupControl1.Controls.Add(this.textDepartmanAd);
+			this.groupControl1.Controls.Add(this.textPersonelAd);
 			this.groupControl1.Controls.Add(this.labelControl1);
 			this.groupControl1.Location = new System.Drawing.Point(978, 12);
 			this.groupControl1.Name = "groupControl1";
@@ -256,15 +296,17 @@
 			this.lookUpEdit1.Name = "lookUpEdit1";
 			this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.lookUpEdit1.Properties.DisplayMember = "AD";
+			this.lookUpEdit1.Properties.ValueMember = "ID";
 			this.lookUpEdit1.Size = new System.Drawing.Size(292, 20);
 			this.lookUpEdit1.TabIndex = 21;
 			// 
-			// textEdit16
+			// textPersonelSoyad
 			// 
-			this.textEdit16.Location = new System.Drawing.Point(118, 93);
-			this.textEdit16.Name = "textEdit16";
-			this.textEdit16.Size = new System.Drawing.Size(292, 20);
-			this.textEdit16.TabIndex = 30;
+			this.textPersonelSoyad.Location = new System.Drawing.Point(118, 93);
+			this.textPersonelSoyad.Name = "textPersonelSoyad";
+			this.textPersonelSoyad.Size = new System.Drawing.Size(292, 20);
+			this.textPersonelSoyad.TabIndex = 30;
 			// 
 			// labelControl6
 			// 
@@ -274,12 +316,12 @@
 			this.labelControl6.TabIndex = 29;
 			this.labelControl6.Text = "Personel Soyad:";
 			// 
-			// textEdit15
+			// textPersonelFotograf
 			// 
-			this.textEdit15.Location = new System.Drawing.Point(118, 197);
-			this.textEdit15.Name = "textEdit15";
-			this.textEdit15.Size = new System.Drawing.Size(292, 20);
-			this.textEdit15.TabIndex = 28;
+			this.textPersonelFotograf.Location = new System.Drawing.Point(118, 197);
+			this.textPersonelFotograf.Name = "textPersonelFotograf";
+			this.textPersonelFotograf.Size = new System.Drawing.Size(292, 20);
+			this.textPersonelFotograf.TabIndex = 28;
 			// 
 			// labelControl5
 			// 
@@ -289,14 +331,14 @@
 			this.labelControl5.TabIndex = 27;
 			this.labelControl5.Text = "Fotoğraf:";
 			// 
-			// textEdit14
+			// textPersonelTelefon
 			// 
-			this.textEdit14.Location = new System.Drawing.Point(118, 172);
-			this.textEdit14.Name = "textEdit14";
-			this.textEdit14.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
-			this.textEdit14.Properties.MaskSettings.Set("mask", "(\\(\\d\\d\\d\\) )?\\d{1,3}-\\d\\d-\\d\\d");
-			this.textEdit14.Size = new System.Drawing.Size(292, 20);
-			this.textEdit14.TabIndex = 26;
+			this.textPersonelTelefon.Location = new System.Drawing.Point(118, 172);
+			this.textPersonelTelefon.Name = "textPersonelTelefon";
+			this.textPersonelTelefon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.RegExpMaskManager));
+			this.textPersonelTelefon.Properties.MaskSettings.Set("mask", "(\\(\\d\\d\\d\\) )?\\d{1,3}-\\d\\d-\\d\\d");
+			this.textPersonelTelefon.Size = new System.Drawing.Size(292, 20);
+			this.textPersonelTelefon.TabIndex = 26;
 			// 
 			// labelControl4
 			// 
@@ -314,12 +356,12 @@
 			this.labelControl2.TabIndex = 23;
 			this.labelControl2.Text = "Departman:";
 			// 
-			// textEdit13
+			// textPersonelMail
 			// 
-			this.textEdit13.Location = new System.Drawing.Point(118, 146);
-			this.textEdit13.Name = "textEdit13";
-			this.textEdit13.Size = new System.Drawing.Size(292, 20);
-			this.textEdit13.TabIndex = 22;
+			this.textPersonelMail.Location = new System.Drawing.Point(118, 146);
+			this.textPersonelMail.Name = "textPersonelMail";
+			this.textPersonelMail.Size = new System.Drawing.Size(292, 20);
+			this.textPersonelMail.TabIndex = 22;
 			// 
 			// labelControl3
 			// 
@@ -381,12 +423,12 @@
 			this.BtnKaydet.TabIndex = 15;
 			this.BtnKaydet.Text = "KAYDET";
 			// 
-			// textDepartmanAd
+			// textPersonelAd
 			// 
-			this.textDepartmanAd.Location = new System.Drawing.Point(118, 67);
-			this.textDepartmanAd.Name = "textDepartmanAd";
-			this.textDepartmanAd.Size = new System.Drawing.Size(292, 20);
-			this.textDepartmanAd.TabIndex = 4;
+			this.textPersonelAd.Location = new System.Drawing.Point(118, 67);
+			this.textPersonelAd.Name = "textPersonelAd";
+			this.textPersonelAd.Size = new System.Drawing.Size(292, 20);
+			this.textPersonelAd.TabIndex = 4;
 			// 
 			// labelControl1
 			// 
@@ -417,6 +459,7 @@
 			this.gridView1.GridControl = this.gridControl1;
 			this.gridView1.Name = "gridView1";
 			this.gridView1.OptionsView.ShowGroupPanel = false;
+			this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
 			// 
 			// panel2
 			// 
@@ -435,6 +478,46 @@
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(236, 242);
 			this.panel2.TabIndex = 18;
+			// 
+			// labelControl15
+			// 
+			this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl15.Appearance.Options.UseFont = true;
+			this.labelControl15.Location = new System.Drawing.Point(51, 218);
+			this.labelControl15.Name = "labelControl15";
+			this.labelControl15.Size = new System.Drawing.Size(25, 16);
+			this.labelControl15.TabIndex = 64;
+			this.labelControl15.Text = "mail";
+			// 
+			// labelControl14
+			// 
+			this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl14.Appearance.Options.UseFont = true;
+			this.labelControl14.Location = new System.Drawing.Point(84, 193);
+			this.labelControl14.Name = "labelControl14";
+			this.labelControl14.Size = new System.Drawing.Size(71, 16);
+			this.labelControl14.TabIndex = 63;
+			this.labelControl14.Text = "departman";
+			// 
+			// labelControl13
+			// 
+			this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl13.Appearance.Options.UseFont = true;
+			this.labelControl13.Location = new System.Drawing.Point(60, 172);
+			this.labelControl13.Name = "labelControl13";
+			this.labelControl13.Size = new System.Drawing.Size(39, 16);
+			this.labelControl13.TabIndex = 62;
+			this.labelControl13.Text = "soyad";
+			// 
+			// labelControl12
+			// 
+			this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl12.Appearance.Options.UseFont = true;
+			this.labelControl12.Location = new System.Drawing.Point(41, 147);
+			this.labelControl12.Name = "labelControl12";
+			this.labelControl12.Size = new System.Drawing.Size(16, 16);
+			this.labelControl12.TabIndex = 61;
+			this.labelControl12.Text = "ad";
 			// 
 			// textEdit18
 			// 
@@ -529,6 +612,46 @@
 			this.panel3.Size = new System.Drawing.Size(236, 242);
 			this.panel3.TabIndex = 19;
 			// 
+			// labelControl19
+			// 
+			this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl19.Appearance.Options.UseFont = true;
+			this.labelControl19.Location = new System.Drawing.Point(49, 214);
+			this.labelControl19.Name = "labelControl19";
+			this.labelControl19.Size = new System.Drawing.Size(25, 16);
+			this.labelControl19.TabIndex = 65;
+			this.labelControl19.Text = "mail";
+			// 
+			// labelControl18
+			// 
+			this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl18.Appearance.Options.UseFont = true;
+			this.labelControl18.Location = new System.Drawing.Point(84, 189);
+			this.labelControl18.Name = "labelControl18";
+			this.labelControl18.Size = new System.Drawing.Size(71, 16);
+			this.labelControl18.TabIndex = 65;
+			this.labelControl18.Text = "departman";
+			// 
+			// labelControl17
+			// 
+			this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl17.Appearance.Options.UseFont = true;
+			this.labelControl17.Location = new System.Drawing.Point(60, 169);
+			this.labelControl17.Name = "labelControl17";
+			this.labelControl17.Size = new System.Drawing.Size(39, 16);
+			this.labelControl17.TabIndex = 63;
+			this.labelControl17.Text = "soyad";
+			// 
+			// labelControl16
+			// 
+			this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl16.Appearance.Options.UseFont = true;
+			this.labelControl16.Location = new System.Drawing.Point(42, 147);
+			this.labelControl16.Name = "labelControl16";
+			this.labelControl16.Size = new System.Drawing.Size(16, 16);
+			this.labelControl16.TabIndex = 62;
+			this.labelControl16.Text = "ad";
+			// 
 			// textEdit19
 			// 
 			this.textEdit19.EditValue = "Soyad:";
@@ -622,6 +745,46 @@
 			this.panel4.Size = new System.Drawing.Size(236, 242);
 			this.panel4.TabIndex = 20;
 			// 
+			// labelControl23
+			// 
+			this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl23.Appearance.Options.UseFont = true;
+			this.labelControl23.Location = new System.Drawing.Point(49, 214);
+			this.labelControl23.Name = "labelControl23";
+			this.labelControl23.Size = new System.Drawing.Size(25, 16);
+			this.labelControl23.TabIndex = 66;
+			this.labelControl23.Text = "mail";
+			// 
+			// labelControl22
+			// 
+			this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl22.Appearance.Options.UseFont = true;
+			this.labelControl22.Location = new System.Drawing.Point(84, 189);
+			this.labelControl22.Name = "labelControl22";
+			this.labelControl22.Size = new System.Drawing.Size(71, 16);
+			this.labelControl22.TabIndex = 66;
+			this.labelControl22.Text = "departman";
+			// 
+			// labelControl21
+			// 
+			this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl21.Appearance.Options.UseFont = true;
+			this.labelControl21.Location = new System.Drawing.Point(60, 167);
+			this.labelControl21.Name = "labelControl21";
+			this.labelControl21.Size = new System.Drawing.Size(39, 16);
+			this.labelControl21.TabIndex = 66;
+			this.labelControl21.Text = "soyad";
+			// 
+			// labelControl20
+			// 
+			this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl20.Appearance.Options.UseFont = true;
+			this.labelControl20.Location = new System.Drawing.Point(39, 147);
+			this.labelControl20.Name = "labelControl20";
+			this.labelControl20.Size = new System.Drawing.Size(16, 16);
+			this.labelControl20.TabIndex = 65;
+			this.labelControl20.Text = "ad";
+			// 
 			// textEdit20
 			// 
 			this.textEdit20.EditValue = "Soyad:";
@@ -697,166 +860,6 @@
 			this.pictureEdit4.Size = new System.Drawing.Size(110, 100);
 			this.pictureEdit4.TabIndex = 3;
 			// 
-			// labelControl8
-			// 
-			this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl8.Appearance.Options.UseFont = true;
-			this.labelControl8.Location = new System.Drawing.Point(41, 147);
-			this.labelControl8.Name = "labelControl8";
-			this.labelControl8.Size = new System.Drawing.Size(16, 16);
-			this.labelControl8.TabIndex = 60;
-			this.labelControl8.Text = "ad";
-			// 
-			// labelControl9
-			// 
-			this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl9.Appearance.Options.UseFont = true;
-			this.labelControl9.Location = new System.Drawing.Point(60, 170);
-			this.labelControl9.Name = "labelControl9";
-			this.labelControl9.Size = new System.Drawing.Size(39, 16);
-			this.labelControl9.TabIndex = 61;
-			this.labelControl9.Text = "soyad";
-			// 
-			// labelControl10
-			// 
-			this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl10.Appearance.Options.UseFont = true;
-			this.labelControl10.Location = new System.Drawing.Point(84, 193);
-			this.labelControl10.Name = "labelControl10";
-			this.labelControl10.Size = new System.Drawing.Size(71, 16);
-			this.labelControl10.TabIndex = 62;
-			this.labelControl10.Text = "departman";
-			// 
-			// labelControl11
-			// 
-			this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl11.Appearance.Options.UseFont = true;
-			this.labelControl11.Location = new System.Drawing.Point(51, 218);
-			this.labelControl11.Name = "labelControl11";
-			this.labelControl11.Size = new System.Drawing.Size(25, 16);
-			this.labelControl11.TabIndex = 63;
-			this.labelControl11.Text = "mail";
-			// 
-			// labelControl12
-			// 
-			this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl12.Appearance.Options.UseFont = true;
-			this.labelControl12.Location = new System.Drawing.Point(41, 147);
-			this.labelControl12.Name = "labelControl12";
-			this.labelControl12.Size = new System.Drawing.Size(16, 16);
-			this.labelControl12.TabIndex = 61;
-			this.labelControl12.Text = "ad";
-			// 
-			// labelControl13
-			// 
-			this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl13.Appearance.Options.UseFont = true;
-			this.labelControl13.Location = new System.Drawing.Point(60, 172);
-			this.labelControl13.Name = "labelControl13";
-			this.labelControl13.Size = new System.Drawing.Size(39, 16);
-			this.labelControl13.TabIndex = 62;
-			this.labelControl13.Text = "soyad";
-			// 
-			// labelControl14
-			// 
-			this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl14.Appearance.Options.UseFont = true;
-			this.labelControl14.Location = new System.Drawing.Point(84, 193);
-			this.labelControl14.Name = "labelControl14";
-			this.labelControl14.Size = new System.Drawing.Size(71, 16);
-			this.labelControl14.TabIndex = 63;
-			this.labelControl14.Text = "departman";
-			// 
-			// labelControl15
-			// 
-			this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl15.Appearance.Options.UseFont = true;
-			this.labelControl15.Location = new System.Drawing.Point(51, 218);
-			this.labelControl15.Name = "labelControl15";
-			this.labelControl15.Size = new System.Drawing.Size(25, 16);
-			this.labelControl15.TabIndex = 64;
-			this.labelControl15.Text = "mail";
-			// 
-			// labelControl16
-			// 
-			this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl16.Appearance.Options.UseFont = true;
-			this.labelControl16.Location = new System.Drawing.Point(42, 147);
-			this.labelControl16.Name = "labelControl16";
-			this.labelControl16.Size = new System.Drawing.Size(16, 16);
-			this.labelControl16.TabIndex = 62;
-			this.labelControl16.Text = "ad";
-			// 
-			// labelControl17
-			// 
-			this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl17.Appearance.Options.UseFont = true;
-			this.labelControl17.Location = new System.Drawing.Point(60, 169);
-			this.labelControl17.Name = "labelControl17";
-			this.labelControl17.Size = new System.Drawing.Size(39, 16);
-			this.labelControl17.TabIndex = 63;
-			this.labelControl17.Text = "soyad";
-			// 
-			// labelControl18
-			// 
-			this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl18.Appearance.Options.UseFont = true;
-			this.labelControl18.Location = new System.Drawing.Point(84, 189);
-			this.labelControl18.Name = "labelControl18";
-			this.labelControl18.Size = new System.Drawing.Size(71, 16);
-			this.labelControl18.TabIndex = 65;
-			this.labelControl18.Text = "departman";
-			// 
-			// labelControl19
-			// 
-			this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl19.Appearance.Options.UseFont = true;
-			this.labelControl19.Location = new System.Drawing.Point(49, 214);
-			this.labelControl19.Name = "labelControl19";
-			this.labelControl19.Size = new System.Drawing.Size(25, 16);
-			this.labelControl19.TabIndex = 65;
-			this.labelControl19.Text = "mail";
-			// 
-			// labelControl20
-			// 
-			this.labelControl20.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl20.Appearance.Options.UseFont = true;
-			this.labelControl20.Location = new System.Drawing.Point(39, 147);
-			this.labelControl20.Name = "labelControl20";
-			this.labelControl20.Size = new System.Drawing.Size(16, 16);
-			this.labelControl20.TabIndex = 65;
-			this.labelControl20.Text = "ad";
-			// 
-			// labelControl21
-			// 
-			this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl21.Appearance.Options.UseFont = true;
-			this.labelControl21.Location = new System.Drawing.Point(60, 167);
-			this.labelControl21.Name = "labelControl21";
-			this.labelControl21.Size = new System.Drawing.Size(39, 16);
-			this.labelControl21.TabIndex = 66;
-			this.labelControl21.Text = "soyad";
-			// 
-			// labelControl22
-			// 
-			this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl22.Appearance.Options.UseFont = true;
-			this.labelControl22.Location = new System.Drawing.Point(84, 189);
-			this.labelControl22.Name = "labelControl22";
-			this.labelControl22.Size = new System.Drawing.Size(71, 16);
-			this.labelControl22.TabIndex = 66;
-			this.labelControl22.Text = "departman";
-			// 
-			// labelControl23
-			// 
-			this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelControl23.Appearance.Options.UseFont = true;
-			this.labelControl23.Location = new System.Drawing.Point(49, 214);
-			this.labelControl23.Name = "labelControl23";
-			this.labelControl23.Size = new System.Drawing.Size(25, 16);
-			this.labelControl23.TabIndex = 66;
-			this.labelControl23.Text = "mail";
-			// 
 			// FrmPersonel
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -882,12 +885,12 @@
 			this.groupControl1.ResumeLayout(false);
 			this.groupControl1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit16.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit15.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit14.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit13.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelSoyad.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelFotograf.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelTelefon.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelMail.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.textID.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.textDepartmanAd.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textPersonelAd.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
@@ -927,7 +930,7 @@
 		private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
 		private DevExpress.XtraEditors.SimpleButton BtnSil;
 		private DevExpress.XtraEditors.SimpleButton BtnKaydet;
-		private DevExpress.XtraEditors.TextEdit textDepartmanAd;
+		private DevExpress.XtraEditors.TextEdit textPersonelAd;
 		private DevExpress.XtraEditors.LabelControl labelControl1;
 		private DevExpress.XtraGrid.GridControl gridControl1;
 		private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
@@ -936,7 +939,7 @@
 		private DevExpress.XtraEditors.TextEdit textEdit1;
 		private DevExpress.XtraEditors.TextEdit KategoriAd;
 		private DevExpress.XtraEditors.LabelControl labelControl2;
-		private DevExpress.XtraEditors.TextEdit textEdit13;
+		private DevExpress.XtraEditors.TextEdit textPersonelMail;
 		private DevExpress.XtraEditors.LabelControl labelControl3;
 		private System.Windows.Forms.Panel panel2;
 		private DevExpress.XtraEditors.TextEdit textEdit3;
@@ -953,12 +956,12 @@
 		private DevExpress.XtraEditors.TextEdit textEdit10;
 		private DevExpress.XtraEditors.TextEdit textEdit11;
 		private DevExpress.XtraEditors.PictureEdit pictureEdit4;
-		private DevExpress.XtraEditors.TextEdit textEdit15;
+		private DevExpress.XtraEditors.TextEdit textPersonelFotograf;
 		private DevExpress.XtraEditors.LabelControl labelControl5;
-		private DevExpress.XtraEditors.TextEdit textEdit14;
+		private DevExpress.XtraEditors.TextEdit textPersonelTelefon;
 		private DevExpress.XtraEditors.LabelControl labelControl4;
 		private DevExpress.XtraEditors.TextEdit textEdit17;
-		private DevExpress.XtraEditors.TextEdit textEdit16;
+		private DevExpress.XtraEditors.TextEdit textPersonelSoyad;
 		private DevExpress.XtraEditors.LabelControl labelControl6;
 		private DevExpress.XtraEditors.TextEdit textEdit18;
 		private DevExpress.XtraEditors.TextEdit textEdit19;

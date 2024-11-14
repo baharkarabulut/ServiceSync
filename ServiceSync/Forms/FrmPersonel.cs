@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraEditors;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,9 +33,17 @@ namespace ServiceSync.Forms
 								u.AD,
 								u.SOYAD,
 								u.MAIL,
-								u.TELEFON
+								u.TELEFON,
+								u.FOTOGRAF
 							};
 			gridControl1.DataSource = personel.ToList();
+
+			lookUpEdit1.Properties.DataSource = (from x in db.TblDEPARTMAN
+												select new
+												{
+													x.ID,
+													x.AD
+												}).ToList();
 
 			labelControl8.Text = db.TblPERSONEL.First(x => x.ID == 1).AD;
 			labelControl9.Text = db.TblPERSONEL.First(x => x.ID == 1).SOYAD;
@@ -55,6 +64,16 @@ namespace ServiceSync.Forms
 			labelControl21.Text = db.TblPERSONEL.First(x => x.ID == 4).SOYAD;
 			labelControl22.Text = db.TblPERSONEL.First(x => x.ID == 4).TblDEPARTMAN.AD;
 			labelControl23.Text = db.TblPERSONEL.First(x => x.ID == 4).MAIL;
+		}
+
+		private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+		{
+			textID.Text = gridView1.GetFocusedRowCellValue("ID").ToString();
+			textPersonelAd.Text = gridView1.GetFocusedRowCellValue("AD").ToString();
+			textPersonelSoyad.Text = gridView1.GetFocusedRowCellValue("SOYAD").ToString();
+			textPersonelMail.Text = gridView1.GetFocusedRowCellValue("MAIL").ToString();
+			textPersonelTelefon.Text = gridView1.GetFocusedRowCellValue("TELEFON").ToString();
+			textPersonelFotograf.Text = gridView1.GetFocusedRowCellValue("FOTOGRAF").ToString();
 		}
 	}
 }
